@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Solnet\src\Solnet.Extensions\Solnet.Extensions.csproj" />
+    <ProjectReference Include="..\..\Solnet\src\Solnet.KeyStore\Solnet.KeyStore.csproj" />
+    <ProjectReference Include="..\..\Solnet\src\Solnet.Programs\Solnet.Programs.csproj" />
+    <ProjectReference Include="..\..\Solnet\src\Solnet.Rpc\Solnet.Rpc.csproj" />
+    <ProjectReference Include="..\..\Solnet\src\Solnet.Wallet\Solnet.Wallet.csproj" />
+  </ItemGroup>
+
 </Project>

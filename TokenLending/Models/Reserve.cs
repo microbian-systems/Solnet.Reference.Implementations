@@ -1,6 +1,7 @@
 ﻿using Solnet.Programs.Utilities;
 using System;
 using System.Numerics;
+using Solnet.Wallet;
 
 namespace Solnet.Programs.TokenLending.Models
 {

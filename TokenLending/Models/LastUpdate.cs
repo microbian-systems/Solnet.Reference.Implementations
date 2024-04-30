@@ -1,4 +1,5 @@
 ﻿using System;
+using Solnet.Programs.Utilities;
 
 namespace Solnet.Programs.TokenLending.Models
 {

@@ -2,6 +2,7 @@
 using System;
 using System.Linq;
 using System.Text;
+using Solnet.Programs.Utilities;
 
 namespace Solnet.Programs.TokenLending.Models
 {

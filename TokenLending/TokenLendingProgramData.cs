@@ -4,6 +4,9 @@ using Solnet.Rpc.Utilities;
 using Solnet.Wallet;
 using System;
 using System.Collections.Generic;
+using Solnet.Extensions;
+using Solnet.Extensions.TokenMint;
+using Solnet.Extensions.Models;
 
 namespace Solnet.Programs.TokenLending
 {
@@ -395,9 +398,11 @@ namespace Solnet.Programs.TokenLending
         {
             List<byte[]> seeds = new() { lendingMarket.KeyBytes };
 
-            bool success = AddressExtensions.TryFindProgramAddress(seeds, programId.KeyBytes,
-                out byte[] lendingMarketAuthority, out _);
-
+            // todo - fix the following code....
+            // bool success = AddressExtensions.TryFindProgramAddress(seeds, programId.KeyBytes,
+            //     out byte[] lendingMarketAuthority, out _);
+            var success = false; // dummy value
+            var lendingMarketAuthority = new byte[32]; // dummy value
             return !success ? null : new(lendingMarketAuthority);
         }
     }
