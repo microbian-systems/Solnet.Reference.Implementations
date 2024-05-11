@@ -25,14 +25,12 @@ namespace Solnet.Programs.TokenLending
         /// https://github.com/solana-labs/solana-program-library/tree/master/token-lending
         /// </remarks>
         /// </summary>
-        public static readonly PublicKey MainNetProgramIdKey =
-            new PublicKey("LendZqTs8gn5CTSJU1jWKhKuVpjJGom45nnwPb2AMTi");
+        public static readonly PublicKey MainNetProgramIdKey = new("LendZqTs8gn5CTSJU1jWKhKuVpjJGom45nnwPb2AMTi");
 
         /// <summary>
         /// SPL Token Lending Program DevNet Program ID.
         /// </summary>
-        public static readonly PublicKey DevNetProgramIdKey =
-            new PublicKey("6TvznH3B2e3p2mbhufNBpgSrLx6UkgvxtVQvopEZ2kuH");
+        public static readonly PublicKey DevNetProgramIdKey = new("6TvznH3B2e3p2mbhufNBpgSrLx6UkgvxtVQvopEZ2kuH");
 
         /// <summary>
         /// SPL Token Lending Program Name.
@@ -51,13 +49,13 @@ namespace Solnet.Programs.TokenLending
         /// Initialize the <see cref="TokenLendingProgram"/> for <see cref="Cluster.DevNet"/>.
         /// </summary>
         /// <returns>The <see cref="TokenLendingProgram"/> instance.</returns>
-        public static TokenLendingProgram CreateDevNet() => new TokenLendingProgram(DevNetProgramIdKey);
+        public static TokenLendingProgram CreateDevNet() => new(DevNetProgramIdKey);
 
         /// <summary>
         /// Initialize the <see cref="TokenLendingProgram"/> for <see cref="Cluster.MainNet"/>.
         /// </summary>
         /// <returns>The <see cref="TokenLendingProgram"/> instance.</returns>
-        public static TokenLendingProgram CreateMainNet() => new TokenLendingProgram(MainNetProgramIdKey);
+        public static TokenLendingProgram CreateMainNet() => new(MainNetProgramIdKey);
 
         /// <summary>
         /// Initializes an instruction to initialize a <see cref="LendingMarket"/>.
