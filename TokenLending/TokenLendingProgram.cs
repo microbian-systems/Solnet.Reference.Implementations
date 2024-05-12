@@ -1,12 +1,11 @@
-﻿using Solnet.Programs.Abstract;
-using Solnet.Programs.TokenLending.Models;
+﻿using Solnet.Programs;
+using Solnet.Programs.Abstract;
 using Solnet.Rpc;
 using Solnet.Rpc.Models;
 using Solnet.Wallet;
-using System.Collections.Generic;
-using System.Linq;
+using TokenLending.Models;
 
-namespace Solnet.Programs.TokenLending
+namespace TokenLending
 {
     /// <summary>
     /// Implements the Token Lending Program methods.

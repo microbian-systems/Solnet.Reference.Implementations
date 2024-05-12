@@ -1191,43 +1191,43 @@
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
             <returns>A decoded instruction.</returns>
         </member>
-        <member name="T:Solnet.Programs.DecodedInstruction">
+        <member name="T:Solnet.Programs.Models.DecodedInstruction">
             <summary>
             Represents a decoded instruction.
             </summary>
         </member>
-        <member name="P:Solnet.Programs.DecodedInstruction.PublicKey">
+        <member name="P:Solnet.Programs.Models.DecodedInstruction.PublicKey">
             <summary>
             The public key of the program.
             </summary>
         </member>
-        <member name="P:Solnet.Programs.DecodedInstruction.ProgramName">
+        <member name="P:Solnet.Programs.Models.DecodedInstruction.ProgramName">
             <summary>
             The program name.
             </summary>
         </member>
-        <member name="P:Solnet.Programs.DecodedInstruction.InstructionName">
+        <member name="P:Solnet.Programs.Models.DecodedInstruction.InstructionName">
             <summary>
             The instruction name.
             </summary>
         </member>
-        <member name="P:Solnet.Programs.DecodedInstruction.Values">
+        <member name="P:Solnet.Programs.Models.DecodedInstruction.Values">
             <summary>
             Values decoded from the instruction.
             </summary>
         </member>
-        <member name="P:Solnet.Programs.DecodedInstruction.InnerInstructions">
+        <member name="P:Solnet.Programs.Models.DecodedInstruction.InnerInstructions">
             <summary>
             The inner instructions related to this decoded instruction.
             </summary>
         </member>
-        <member name="M:Solnet.Programs.DecodedInstruction.ToString">
+        <member name="M:Solnet.Programs.Models.DecodedInstruction.ToString">
             <summary>
             Converts the decoded instructions to a string
             </summary>
             <returns>A string representation of the decoded instructions</returns>
         </member>
-        <member name="M:Solnet.Programs.DecodedInstruction.ToString(System.Int32)">
+        <member name="M:Solnet.Programs.Models.DecodedInstruction.ToString(System.Int32)">
             <summary>
             Converts the decoded instructions to a string, indented a certain amount
             </summary>
@@ -2001,125 +2001,6 @@
             <param name="data">The data.</param>
             <returns>The <see cref="T:Solnet.Programs.Models.TokenProgram.TokenMint"/> structure.</returns>
         </member>
-        <member name="T:Solnet.Programs.Models.Stake.State">
-            <summary>
-            Represents <see cref="T:Solnet.Programs.StakeProgram"/> State Structs in Solana.
-            </summary>
-        </member>
-        <member name="T:Solnet.Programs.Models.Stake.State.Authorized">
-            <summary>
-            A public key pair passed as an Authorized struct with staking and withdrawing authorities
-            </summary>
-        </member>
-        <member name="P:Solnet.Programs.Models.Stake.State.Authorized.Staker">
-            The staking authority
-        </member>
-        <member name="P:Solnet.Programs.Models.Stake.State.Authorized.Withdrawer">
-            The withdrawing authority
-        </member>
-        <member name="T:Solnet.Programs.Models.Stake.State.Delegation">
-            <summary>
-            A structure containing the information for delegating a stake
-            </summary>
-        </member>
-        <member name="P:Solnet.Programs.Models.Stake.State.Delegation.VoterPubkey">
-            <summary>
-            to whom the stake is delegated
-            </summary>
-        </member>
-        <member name="P:Solnet.Programs.Models.Stake.State.Delegation.Stake">
-            <summary>
-            activated stake amount, set at delegate() time
-            </summary>
-        </member>
-        <member name="P:Solnet.Programs.Models.Stake.State.Delegation.ActivationEpoch">
-            <summary>
-             epoch at which this stake was activated, std::Epoch::MAX if is a bootstrap stake
-             </summary>
-        </member>
-        <member name="P:Solnet.Programs.Models.Stake.State.Delegation.DeactivationEpoch">
-            <summary>
-            epoch the stake was deactivated, std::Epoch::MAX if not deactivated
-            </summary>
-        </member>
-        <member name="P:Solnet.Programs.Models.Stake.State.Delegation.WarmupCooldownRate">
-            <summary>
-            how much stake we can activate per-epoch as a fraction of currently effective stake
-            </summary>
-        </member>
-        <member name="T:Solnet.Programs.Models.Stake.State.Lockup">
-            <summary>
-            A structure containing the information for setting Lockup information for a stake
-            </summary>
-        </member>
-        <member name="P:Solnet.Programs.Models.Stake.State.Lockup.UnixTimestamp">
-            <summary>
-            UnixTimestamp at which this stake will allow withdrawal, unless the
-              transaction is signed by the custodian
-              </summary>
-        </member>
-        <member name="P:Solnet.Programs.Models.Stake.State.Lockup.Epoch">
-            <summary>
-            epoch height at which this stake will allow withdrawal, unless the
-            transaction is signed by the custodian
-            </summary>
-        </member>
-        <member name="P:Solnet.Programs.Models.Stake.State.Lockup.Custodian">
-            <summary>
-            custodian signature on a transaction exempts the operation from
-            lockup constraints
-            </summary>
-        </member>
-        <member name="T:Solnet.Programs.Models.Stake.State.Meta">
-            <summary>
-            A structure containing metadata for a stake
-            </summary>
-        </member>
-        <member name="P:Solnet.Programs.Models.Stake.State.Meta.RentExemptReserve">
-            <summary>
-            The Rent Exempt Reserve amount
-            </summary>
-        </member>
-        <member name="P:Solnet.Programs.Models.Stake.State.Meta.Authorized">
-            <summary>
-            An Authorized struct
-            </summary>
-        </member>
-        <member name="P:Solnet.Programs.Models.Stake.State.Meta.Lockup">
-            <summary>
-            A Lockup struct
-            </summary>
-        </member>
-        <member name="T:Solnet.Programs.Models.Stake.State.Stake">
-            <summary>
-            A structure containing information about a redeemed or delegated vote account stake
-            </summary>
-        </member>
-        <member name="P:Solnet.Programs.Models.Stake.State.Stake.Delegation">
-            <summary>
-            A Delegation struct
-            </summary>
-        </member>
-        <member name="P:Solnet.Programs.Models.Stake.State.Stake.CreditsObserved">
-            <summary>
-            credits observed is credits from vote account state when delegated or redeemed
-            </summary>
-        </member>
-        <member name="T:Solnet.Programs.Models.Stake.State.StakeAuthorize">
-            <summary>
-            An enum representing Authority type
-            </summary>
-        </member>
-        <member name="F:Solnet.Programs.Models.Stake.State.StakeAuthorize.Staker">
-            <summary>
-            Is staker
-            </summary>
-        </member>
-        <member name="F:Solnet.Programs.Models.Stake.State.StakeAuthorize.Withdrawer">
-            <summary>
-            Is withdrawer
-            </summary>
-        </member>
         <member name="T:Solnet.Programs.NameServiceInstructions">
             <summary>
             Represents the instruction types for the <see cref="T:Solnet.Programs.NameServiceProgram"/> along with a friendly name so as not to use reflection.
@@ -2325,7 +2206,7 @@
             </summary>
             <returns>The transaction instruction data.</returns>
         </member>
-        <member name="M:Solnet.Programs.NameServiceProgram.DecodeCreateNameRegistry(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.NameServiceProgram.DecodeCreateNameRegistry(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.NameServiceInstructions.Values.Create"/> method
             </summary>
@@ -2334,7 +2215,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.NameServiceProgram.DecodeUpdateNameRegistry(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.NameServiceProgram.DecodeUpdateNameRegistry(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.NameServiceInstructions.Values.Update"/> method
             </summary>
@@ -2343,7 +2224,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.NameServiceProgram.DecodeTransferNameRegistry(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.NameServiceProgram.DecodeTransferNameRegistry(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.NameServiceInstructions.Values.Transfer"/> method
             </summary>
@@ -2352,7 +2233,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.NameServiceProgram.DecodeDeleteNameRegistry(Solnet.Programs.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.NameServiceProgram.DecodeDeleteNameRegistry(Solnet.Programs.Models.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.NameServiceInstructions.Values.Delete"/> method
             </summary>
@@ -2412,7 +2293,7 @@
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
             <returns>A decoded instruction.</returns>
         </member>
-        <member name="T:Solnet.Programs.StakeProgram">
+        <member name="T:Solnet.Programs.Stake.StakeProgram">
             <summary>
             Implements the Stake Program methods.
             <remarks>
@@ -2422,27 +2303,27 @@
             </remarks>
             </summary>
         </member>
-        <member name="F:Solnet.Programs.StakeProgram.ProgramIdKey">
+        <member name="F:Solnet.Programs.Stake.StakeProgram.ProgramIdKey">
             <summary>
             The public key of the Stake Program.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.StakeProgram.StakeAccountDataSize">
+        <member name="F:Solnet.Programs.Stake.StakeProgram.StakeAccountDataSize">
             <summary>
             Stake Account Layout Size
             </summary>
         </member>
-        <member name="F:Solnet.Programs.StakeProgram.ConfigKey">
+        <member name="F:Solnet.Programs.Stake.StakeProgram.ConfigKey">
             <summary>
             Stake Config ID
             </summary>
         </member>
-        <member name="F:Solnet.Programs.StakeProgram.ProgramName">
+        <member name="F:Solnet.Programs.Stake.StakeProgram.ProgramName">
             <summary>
             The program's name.
             </summary>
         </member>
-        <member name="M:Solnet.Programs.StakeProgram.Initialize(Solnet.Wallet.PublicKey,Solnet.Programs.Models.Stake.State.Authorized,Solnet.Programs.Models.Stake.State.Lockup)">
+        <member name="M:Solnet.Programs.Stake.StakeProgram.Initialize(Solnet.Wallet.PublicKey,Solnet.Programs.Stake.State.Authorized,Solnet.Programs.Stake.State.Lockup)">
             <summary>
             Initialize a stake with lockup and authorization information
             </summary>
@@ -2451,7 +2332,7 @@
             <param name="lockup">Carries information about withdrawal restrictions</param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.StakeProgram.Authorize(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Programs.Models.Stake.State.StakeAuthorize,Solnet.Wallet.PublicKey)">
+        <member name="M:Solnet.Programs.Stake.StakeProgram.Authorize(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Programs.Stake.State.StakeAuthorize,Solnet.Wallet.PublicKey)">
             <summary>
             Authorize a key to manage stake or withdrawal
             </summary>
@@ -2462,7 +2343,7 @@
             <param name="custodianPubkey">Lockup authority pubkey if updated withdrawer before lockup expiration</param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.StakeProgram.DelegateStake(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:Solnet.Programs.Stake.StakeProgram.DelegateStake(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
             Delegate a stake to a particular vote account
             </summary>
@@ -2471,7 +2352,7 @@
             <param name="votePubkey">Vote account to which this stake will be delegated</param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.StakeProgram.Split(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey)">
+        <member name="M:Solnet.Programs.Stake.StakeProgram.Split(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey)">
             <summary>
             Split u64 tokens and stake off a stake account into another stake account.
             </summary>
@@ -2481,7 +2362,7 @@
             <param name="splitStakePubkey">Uninitialized stake account that will take the split-off amount</param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.StakeProgram.Withdraw(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey)">
+        <member name="M:Solnet.Programs.Stake.StakeProgram.Withdraw(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey)">
             <summary>
             Withdraw unstaked lamports from the stake account
             </summary>
@@ -2492,7 +2373,7 @@
             <param name="custodianPubkey">Lockup authority</param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.StakeProgram.Deactivate(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:Solnet.Programs.Stake.StakeProgram.Deactivate(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
             Deactivates the stake in the account
             </summary>
@@ -2500,7 +2381,7 @@
             <param name="authorizedPubkey">Stake authority</param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.StakeProgram.SetLockup(Solnet.Wallet.PublicKey,Solnet.Programs.Models.Stake.State.Lockup,Solnet.Wallet.PublicKey)">
+        <member name="M:Solnet.Programs.Stake.StakeProgram.SetLockup(Solnet.Wallet.PublicKey,Solnet.Programs.Stake.State.Lockup,Solnet.Wallet.PublicKey)">
             <summary>
             Set stake lockup
             If a lockup is not active, the withdraw authority may set a new lockup
@@ -2511,7 +2392,7 @@
             <param name="custodianPubkey">Lockup authority or withdraw authority</param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.StakeProgram.Merge(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:Solnet.Programs.Stake.StakeProgram.Merge(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
              <summary>
              Merge two stake accounts.
             
@@ -2537,7 +2418,7 @@
              <param name="authorizedPubkey">Stake authority</param>
              <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.StakeProgram.AuthorizeWithSeed(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,System.String,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Programs.Models.Stake.State.StakeAuthorize,Solnet.Wallet.PublicKey)">
+        <member name="M:Solnet.Programs.Stake.StakeProgram.AuthorizeWithSeed(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,System.String,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Programs.Stake.State.StakeAuthorize,Solnet.Wallet.PublicKey)">
             <summary>
             Authorize a key to manage stake or withdrawal with a derived key
             </summary>
@@ -2550,7 +2431,7 @@
             <param name="custodianPubkey">Custodian pubkey</param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.StakeProgram.InitializeChecked(Solnet.Wallet.PublicKey,Solnet.Programs.Models.Stake.State.Authorized)">
+        <member name="M:Solnet.Programs.Stake.StakeProgram.InitializeChecked(Solnet.Wallet.PublicKey,Solnet.Programs.Stake.State.Authorized)">
              <summary>
              Initialize a stake with authorization information
             
@@ -2562,7 +2443,7 @@
              <param name="authorized">Carries pubkeys that must sign staker transactions and withdrawer transactions</param>
              <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.StakeProgram.AuthorizeChecked(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Programs.Models.Stake.State.StakeAuthorize,Solnet.Wallet.PublicKey)">
+        <member name="M:Solnet.Programs.Stake.StakeProgram.AuthorizeChecked(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Programs.Stake.State.StakeAuthorize,Solnet.Wallet.PublicKey)">
              <summary>
              Authorize a key to manage stake or withdrawal
             
@@ -2577,7 +2458,7 @@
              <param name="custodianPubkey">Lockup authority pubkey if updated withdrawer before lockup expiration</param>
              <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.StakeProgram.AuthorizeCheckedWithSeed(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,System.String,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Programs.Models.Stake.State.StakeAuthorize,Solnet.Wallet.PublicKey)">
+        <member name="M:Solnet.Programs.Stake.StakeProgram.AuthorizeCheckedWithSeed(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,System.String,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Programs.Stake.State.StakeAuthorize,Solnet.Wallet.PublicKey)">
              <summary>
              Authorize a key to manage stake or withdrawal with a derived key
             
@@ -2594,7 +2475,7 @@
              <param name="custodianPubkey">Custodian pubkey</param>
              <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.StakeProgram.SetLockupChecked(Solnet.Wallet.PublicKey,Solnet.Programs.Models.Stake.State.Lockup,Solnet.Wallet.PublicKey)">
+        <member name="M:Solnet.Programs.Stake.StakeProgram.SetLockupChecked(Solnet.Wallet.PublicKey,Solnet.Programs.Stake.State.Lockup,Solnet.Wallet.PublicKey)">
              <summary>
              This instruction behaves like `SetLockup` with the additional requirement that
              the new lockup authority also be a signer.
@@ -2608,7 +2489,7 @@
              <param name="custodianPubkey">Lockup authority or withdraw authority</param>
              <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.StakeProgram.Decode(System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.Stake.StakeProgram.Decode(System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes an instruction created by the Stake Program.
             </summary>
@@ -2617,24 +2498,24 @@
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
             <returns>A decoded instruction.</returns>
         </member>
-        <member name="T:Solnet.Programs.StakeProgramData">
+        <member name="T:Solnet.Programs.Stake.StakeProgramData">
             <summary>
             Implements the stake program data encodings.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.StakeProgramData.MethodOffset">
+        <member name="F:Solnet.Programs.Stake.StakeProgramData.MethodOffset">
             <summary>
             The offset at which the value which defines the program method begins. 
             </summary>
         </member>
-        <member name="M:Solnet.Programs.StakeProgramData.EncodeInitializeData(Solnet.Programs.Models.Stake.State.Authorized,Solnet.Programs.Models.Stake.State.Lockup)">
+        <member name="M:Solnet.Programs.Stake.StakeProgramData.EncodeInitializeData(Solnet.Programs.Stake.State.Authorized,Solnet.Programs.Stake.State.Lockup)">
             <summary>
             Summary text here
             </summary>
         </member>
-        <member name="T:Solnet.Programs.StakeProgramInstructions">
+        <member name="T:Solnet.Programs.Stake.StakeProgramInstructions">
             <summary>
-            Represents the instruction types for the <see cref="T:Solnet.Programs.StakeProgram"/> ??? along with a friendly name so as not to use reflection ???.
+            Represents the instruction types for the <see cref="T:Solnet.Programs.Stake.StakeProgram"/> ??? along with a friendly name so as not to use reflection ???.
             <remarks>
             For more information see:
             https://docs.solana.com/developing/runtime-facilities/programs#stake-program
@@ -2642,14 +2523,133 @@
             </remarks>
             </summary>
         </member>
-        <member name="F:Solnet.Programs.StakeProgramInstructions.Names">
+        <member name="F:Solnet.Programs.Stake.StakeProgramInstructions.Names">
             <summary>
-            Represents the user-friendly names for the instruction types for the <see cref="T:Solnet.Programs.StakeProgram"/>.
+            Represents the user-friendly names for the instruction types for the <see cref="T:Solnet.Programs.Stake.StakeProgram"/>.
             </summary>
         </member>
-        <member name="T:Solnet.Programs.StakeProgramInstructions.Values">
+        <member name="T:Solnet.Programs.Stake.StakeProgramInstructions.Values">
             <summary>
-            Represents the instruction types for the <see cref="T:Solnet.Programs.StakeProgram"/>.
+            Represents the instruction types for the <see cref="T:Solnet.Programs.Stake.StakeProgram"/>.
+            </summary>
+        </member>
+        <member name="T:Solnet.Programs.Stake.State">
+            <summary>
+            Represents <see cref="T:Solnet.Programs.Stake.StakeProgram"/> State Structs in Solana.
+            </summary>
+        </member>
+        <member name="T:Solnet.Programs.Stake.State.Authorized">
+            <summary>
+            A public key pair passed as an Authorized struct with staking and withdrawing authorities
+            </summary>
+        </member>
+        <member name="P:Solnet.Programs.Stake.State.Authorized.Staker">
+            The staking authority
+        </member>
+        <member name="P:Solnet.Programs.Stake.State.Authorized.Withdrawer">
+            The withdrawing authority
+        </member>
+        <member name="T:Solnet.Programs.Stake.State.Delegation">
+            <summary>
+            A structure containing the information for delegating a stake
+            </summary>
+        </member>
+        <member name="P:Solnet.Programs.Stake.State.Delegation.VoterPubkey">
+            <summary>
+            to whom the stake is delegated
+            </summary>
+        </member>
+        <member name="P:Solnet.Programs.Stake.State.Delegation.Stake">
+            <summary>
+            activated stake amount, set at delegate() time
+            </summary>
+        </member>
+        <member name="P:Solnet.Programs.Stake.State.Delegation.ActivationEpoch">
+            <summary>
+             epoch at which this stake was activated, std::Epoch::MAX if is a bootstrap stake
+             </summary>
+        </member>
+        <member name="P:Solnet.Programs.Stake.State.Delegation.DeactivationEpoch">
+            <summary>
+            epoch the stake was deactivated, std::Epoch::MAX if not deactivated
+            </summary>
+        </member>
+        <member name="P:Solnet.Programs.Stake.State.Delegation.WarmupCooldownRate">
+            <summary>
+            how much stake we can activate per-epoch as a fraction of currently effective stake
+            </summary>
+        </member>
+        <member name="T:Solnet.Programs.Stake.State.Lockup">
+            <summary>
+            A structure containing the information for setting Lockup information for a stake
+            </summary>
+        </member>
+        <member name="P:Solnet.Programs.Stake.State.Lockup.UnixTimestamp">
+            <summary>
+            UnixTimestamp at which this stake will allow withdrawal, unless the
+              transaction is signed by the custodian
+              </summary>
+        </member>
+        <member name="P:Solnet.Programs.Stake.State.Lockup.Epoch">
+            <summary>
+            epoch height at which this stake will allow withdrawal, unless the
+            transaction is signed by the custodian
+            </summary>
+        </member>
+        <member name="P:Solnet.Programs.Stake.State.Lockup.Custodian">
+            <summary>
+            custodian signature on a transaction exempts the operation from
+            lockup constraints
+            </summary>
+        </member>
+        <member name="T:Solnet.Programs.Stake.State.Meta">
+            <summary>
+            A structure containing metadata for a stake
+            </summary>
+        </member>
+        <member name="P:Solnet.Programs.Stake.State.Meta.RentExemptReserve">
+            <summary>
+            The Rent Exempt Reserve amount
+            </summary>
+        </member>
+        <member name="P:Solnet.Programs.Stake.State.Meta.Authorized">
+            <summary>
+            An Authorized struct
+            </summary>
+        </member>
+        <member name="P:Solnet.Programs.Stake.State.Meta.Lockup">
+            <summary>
+            A Lockup struct
+            </summary>
+        </member>
+        <member name="T:Solnet.Programs.Stake.State.Stake">
+            <summary>
+            A structure containing information about a redeemed or delegated vote account stake
+            </summary>
+        </member>
+        <member name="P:Solnet.Programs.Stake.State.Stake.Delegation">
+            <summary>
+            A Delegation struct
+            </summary>
+        </member>
+        <member name="P:Solnet.Programs.Stake.State.Stake.CreditsObserved">
+            <summary>
+            credits observed is credits from vote account state when delegated or redeemed
+            </summary>
+        </member>
+        <member name="T:Solnet.Programs.Stake.State.StakeAuthorize">
+            <summary>
+            An enum representing Authority type
+            </summary>
+        </member>
+        <member name="F:Solnet.Programs.Stake.State.StakeAuthorize.Staker">
+            <summary>
+            Is staker
+            </summary>
+        </member>
+        <member name="F:Solnet.Programs.Stake.State.StakeAuthorize.Withdrawer">
+            <summary>
+            Is withdrawer
             </summary>
         </member>
         <member name="T:Solnet.Programs.SystemProgram">
@@ -2912,7 +2912,7 @@
             <param name="lamports">Amount of lamports to transfer.</param>
             <returns>The transaction instruction data.</returns>
         </member>
-        <member name="M:Solnet.Programs.SystemProgramData.DecodeCreateAccountData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.SystemProgramData.DecodeCreateAccountData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.SystemProgramInstructions.Values.CreateAccount"/> method
             </summary>
@@ -2921,7 +2921,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.SystemProgramData.DecodeAssignData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.SystemProgramData.DecodeAssignData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.SystemProgramInstructions.Values.Assign"/> method
             </summary>
@@ -2930,7 +2930,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.SystemProgramData.DecodeTransferData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.SystemProgramData.DecodeTransferData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.SystemProgramInstructions.Values.Transfer"/> method
             </summary>
@@ -2939,7 +2939,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.SystemProgramData.DecodeCreateAccountWithSeedData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.SystemProgramData.DecodeCreateAccountWithSeedData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.SystemProgramInstructions.Values.CreateAccountWithSeed"/> method
             </summary>
@@ -2948,7 +2948,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.SystemProgramData.DecodeAdvanceNonceAccountData(Solnet.Programs.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.SystemProgramData.DecodeAdvanceNonceAccountData(Solnet.Programs.Models.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.SystemProgramInstructions.Values.AdvanceNonceAccount"/> method
             </summary>
@@ -2956,7 +2956,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.SystemProgramData.DecodeWithdrawNonceAccountData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.SystemProgramData.DecodeWithdrawNonceAccountData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.SystemProgramInstructions.Values.WithdrawNonceAccount"/> method
             </summary>
@@ -2965,7 +2965,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.SystemProgramData.DecodeInitializeNonceAccountData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.SystemProgramData.DecodeInitializeNonceAccountData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.SystemProgramInstructions.Values.InitializeNonceAccount"/> method
             </summary>
@@ -2974,7 +2974,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.SystemProgramData.DecodeAuthorizeNonceAccountData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.SystemProgramData.DecodeAuthorizeNonceAccountData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.SystemProgramInstructions.Values.AuthorizeNonceAccount"/> method
             </summary>
@@ -2983,7 +2983,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.SystemProgramData.DecodeAllocateData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.SystemProgramData.DecodeAllocateData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.SystemProgramInstructions.Values.Allocate"/> method
             </summary>
@@ -2992,7 +2992,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.SystemProgramData.DecodeAllocateWithSeedData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.SystemProgramData.DecodeAllocateWithSeedData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.SystemProgramInstructions.Values.AllocateWithSeed"/> method
             </summary>
@@ -3001,7 +3001,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.SystemProgramData.DecodeAssignWithSeedData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.SystemProgramData.DecodeAssignWithSeedData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.SystemProgramInstructions.Values.AssignWithSeed"/> method
             </summary>
@@ -3010,7 +3010,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.SystemProgramData.DecodeTransferWithSeedData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.SystemProgramData.DecodeTransferWithSeedData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.SystemProgramInstructions.Values.TransferWithSeed"/> method
             </summary>
@@ -3517,7 +3517,7 @@
             </summary>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeInitializeMintData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeInitializeMintData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.InitializeMint"/> method
             </summary>
@@ -3526,7 +3526,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeInitializeAccountData(Solnet.Programs.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeInitializeAccountData(Solnet.Programs.Models.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.InitializeAccount"/> method
             </summary>
@@ -3534,7 +3534,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeInitializeMultiSignatureData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeInitializeMultiSignatureData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.InitializeMultiSignature"/> method
             </summary>
@@ -3543,7 +3543,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeTransferData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeTransferData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.Transfer"/> method
             </summary>
@@ -3552,7 +3552,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeApproveData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeApproveData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.Approve"/> method
             </summary>
@@ -3561,7 +3561,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeRevokeData(Solnet.Programs.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeRevokeData(Solnet.Programs.Models.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.Revoke"/> method
             </summary>
@@ -3569,7 +3569,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeSetAuthorityData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeSetAuthorityData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.SetAuthority"/> method
             </summary>
@@ -3578,7 +3578,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeMintToData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeMintToData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.MintTo"/> method
             </summary>
@@ -3587,7 +3587,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeBurnData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeBurnData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.Burn"/> method
             </summary>
@@ -3596,7 +3596,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeCloseAccountData(Solnet.Programs.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeCloseAccountData(Solnet.Programs.Models.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.CloseAccount"/> method
             </summary>
@@ -3604,7 +3604,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeFreezeAccountData(Solnet.Programs.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeFreezeAccountData(Solnet.Programs.Models.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.FreezeAccount"/> method
             </summary>
@@ -3612,7 +3612,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeThawAccountData(Solnet.Programs.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeThawAccountData(Solnet.Programs.Models.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.ThawAccount"/> method
             </summary>
@@ -3620,7 +3620,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeTransferCheckedData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeTransferCheckedData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.TransferChecked"/> method
             </summary>
@@ -3629,7 +3629,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeApproveCheckedData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeApproveCheckedData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.ApproveChecked"/> method
             </summary>
@@ -3638,7 +3638,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeMintToCheckedData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeMintToCheckedData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.MintToChecked"/> method
             </summary>
@@ -3647,7 +3647,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeBurnCheckedData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeBurnCheckedData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.BurnChecked"/> method
             </summary>
@@ -3656,7 +3656,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeSyncNativeData(Solnet.Programs.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeSyncNativeData(Solnet.Programs.Models.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.SyncNative"/> method
             </summary>
@@ -3681,7 +3681,7 @@
             <param name="decimals">The decimals of the token.</param>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeInitializeAccount2(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeInitializeAccount2(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.InitializeAccount2"/> method
             </summary>
@@ -3690,7 +3690,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeInitializeAccount3(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeInitializeAccount3(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.InitializeAccount3"/> method
             </summary>
@@ -3699,7 +3699,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeInitializeMultiSignature2(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeInitializeMultiSignature2(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.InitializeMultiSignature2"/> method
             </summary>
@@ -3708,7 +3708,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeInitializeMint2(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeInitializeMint2(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.InitializeMint2"/> method
             </summary>
@@ -3717,7 +3717,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeAmountToUiAmount(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeAmountToUiAmount(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.AmountToUiAmount"/> method
             </summary>
@@ -3726,7 +3726,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeUiAmountToAmount(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeUiAmountToAmount(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.UiAmountToAmount"/> method
             </summary>
@@ -3735,7 +3735,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeGetAccountDataSize(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeGetAccountDataSize(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.UiAmountToAmount"/> method
             </summary>
@@ -3744,7 +3744,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenProgramData.DecodeInitializeImmutableOwner(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenProgramData.DecodeInitializeImmutableOwner(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenProgramInstructions.Values.UiAmountToAmount"/> method
             </summary>
@@ -4358,7 +4358,7 @@
             <param name="maxPoolTokenAmount">The max amount of pool tokens in.</param>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenSwap.TokenSwapProgramData.DecodeInitializeData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenSwap.TokenSwapProgramData.DecodeInitializeData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenSwap.TokenSwapProgramInstructions.Values.Initialize"/> method
             </summary>
@@ -4367,7 +4367,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenSwap.TokenSwapProgramData.DecodeSwapData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenSwap.TokenSwapProgramData.DecodeSwapData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenSwap.TokenSwapProgramInstructions.Values.Swap"/> method
             </summary>
@@ -4376,7 +4376,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenSwap.TokenSwapProgramData.DecodeDepositAllTokenTypesData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenSwap.TokenSwapProgramData.DecodeDepositAllTokenTypesData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenSwap.TokenSwapProgramInstructions.Values.DepositAllTokenTypes"/> method
             </summary>
@@ -4385,7 +4385,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenSwap.TokenSwapProgramData.DecodeWithdrawAllTokenTypesData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenSwap.TokenSwapProgramData.DecodeWithdrawAllTokenTypesData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenSwap.TokenSwapProgramInstructions.Values.WithdrawAllTokenTypes"/> method
             </summary>
@@ -4394,7 +4394,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenSwap.TokenSwapProgramData.DecodeDepositSingleTokenTypeExactAmountInData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenSwap.TokenSwapProgramData.DecodeDepositSingleTokenTypeExactAmountInData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenSwap.TokenSwapProgramInstructions.Values.DepositSingleTokenTypeExactAmountIn"/> method
             </summary>
@@ -4403,7 +4403,7 @@
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenSwap.TokenSwapProgramData.DecodeWithdrawSingleTokenTypeExactAmountOutData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:Solnet.Programs.TokenSwap.TokenSwapProgramData.DecodeWithdrawSingleTokenTypeExactAmountOutData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
             Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenSwap.TokenSwapProgramInstructions.Values.WithdrawSingleTokenTypeExactAmountOut"/> method
             </summary>

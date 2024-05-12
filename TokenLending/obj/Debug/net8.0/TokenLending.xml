@@ -4,579 +4,579 @@
         <name>TokenLending</name>
     </assembly>
     <members>
-        <member name="T:Solnet.Programs.TokenLending.Models.LastUpdate">
+        <member name="T:TokenLending.Models.LastUpdate">
             <summary>
             The last update state.
             </summary>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.LastUpdate.Layout">
+        <member name="T:TokenLending.Models.LastUpdate.Layout">
             <summary>
-            The layout of the <see cref="T:Solnet.Programs.TokenLending.Models.LastUpdate"/> structure.
+            The layout of the <see cref="T:TokenLending.Models.LastUpdate"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LastUpdate.Layout.Length">
+        <member name="F:TokenLending.Models.LastUpdate.Layout.Length">
             <summary>
-            The length of the <see cref="T:Solnet.Programs.TokenLending.Models.LastUpdate"/> structure.
+            The length of the <see cref="T:TokenLending.Models.LastUpdate"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LastUpdate.Layout.SlotOffset">
+        <member name="F:TokenLending.Models.LastUpdate.Layout.SlotOffset">
             <summary>
             The offset of the slot property.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LastUpdate.Layout.StaleOffset">
+        <member name="F:TokenLending.Models.LastUpdate.Layout.StaleOffset">
             <summary>
             The offset of the stale property.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LastUpdate.Slot">
+        <member name="F:TokenLending.Models.LastUpdate.Slot">
             <summary>
             The slot where the update occurred.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LastUpdate.Stale">
+        <member name="F:TokenLending.Models.LastUpdate.Stale">
             <summary>
             True when marked stale, false if the slot is updated.
             </summary>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.LastUpdate.#ctor(System.ReadOnlySpan{System.Byte})">
+        <member name="M:TokenLending.Models.LastUpdate.#ctor(System.ReadOnlySpan{System.Byte})">
             <summary>
-            Initialize the <see cref="T:Solnet.Programs.TokenLending.Models.LastUpdate"/> with the given data.
+            Initialize the <see cref="T:TokenLending.Models.LastUpdate"/> with the given data.
             </summary>
             <param name="data">The byte array to deserialize.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.LastUpdate.Deserialize(System.Byte[])">
+        <member name="M:TokenLending.Models.LastUpdate.Deserialize(System.Byte[])">
             <summary>
-            Deserialize a byte array into the <see cref="T:Solnet.Programs.TokenLending.Models.LastUpdate"/> structure.
+            Deserialize a byte array into the <see cref="T:TokenLending.Models.LastUpdate"/> structure.
             </summary>
             <param name="data">The byte array to deserialize.</param>
-            <returns>The <see cref="T:Solnet.Programs.TokenLending.Models.LastUpdate"/> structure.</returns>
+            <returns>The <see cref="T:TokenLending.Models.LastUpdate"/> structure.</returns>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.LendingMarket">
+        <member name="T:TokenLending.Models.LendingMarket">
             <summary>
             The state of a lending market.
             </summary>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.LendingMarket.Layout">
+        <member name="T:TokenLending.Models.LendingMarket.Layout">
             <summary>
-            The layout of the <see cref="T:Solnet.Programs.TokenLending.Models.LendingMarket"/> structure.
+            The layout of the <see cref="T:TokenLending.Models.LendingMarket"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LendingMarket.Layout.Length">
+        <member name="F:TokenLending.Models.LendingMarket.Layout.Length">
             <summary>
             The length of the structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LendingMarket.Layout.VersionOffset">
+        <member name="F:TokenLending.Models.LendingMarket.Layout.VersionOffset">
             <summary>
             The offset of the Version property.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LendingMarket.Layout.BumpSeedOffset">
+        <member name="F:TokenLending.Models.LendingMarket.Layout.BumpSeedOffset">
             <summary>
             The offset of the BumpSeed property.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LendingMarket.Layout.OwnerOffset">
+        <member name="F:TokenLending.Models.LendingMarket.Layout.OwnerOffset">
             <summary>
             The offset of the Owner property.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LendingMarket.Layout.QuoteCurrencyOffset">
+        <member name="F:TokenLending.Models.LendingMarket.Layout.QuoteCurrencyOffset">
             <summary>
             The offset of the QuoteCurrency property.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LendingMarket.Layout.TokenProgramIdOffset">
+        <member name="F:TokenLending.Models.LendingMarket.Layout.TokenProgramIdOffset">
             <summary>
             The offset of the TokenProgramId property.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LendingMarket.Layout.OracleProgramIdOffset">
+        <member name="F:TokenLending.Models.LendingMarket.Layout.OracleProgramIdOffset">
             <summary>
             The offset of the OracleProgramId property.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LendingMarket.Version">
+        <member name="F:TokenLending.Models.LendingMarket.Version">
             <summary>
             The version of the lending market.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LendingMarket.BumpSeed">
+        <member name="F:TokenLending.Models.LendingMarket.BumpSeed">
             <summary>
             The bump seed for the derived authority address.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LendingMarket.Owner">
+        <member name="F:TokenLending.Models.LendingMarket.Owner">
             <summary>
             Owner authority which can add new reserves.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LendingMarket.QuoteBytes">
+        <member name="F:TokenLending.Models.LendingMarket.QuoteBytes">
             <summary>
             Currency market prices are quoted in
             e.g. "USD" null padded (`*b"USD\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"`) or a SPL token mint pubkey
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LendingMarket.TokenProgramId">
+        <member name="F:TokenLending.Models.LendingMarket.TokenProgramId">
             <summary>
             Token program id.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LendingMarket.OracleProgramId">
+        <member name="F:TokenLending.Models.LendingMarket.OracleProgramId">
             <summary>
             Oracle (Pyth) program id.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LendingMarket.QuoteCurrencyMint">
+        <member name="F:TokenLending.Models.LendingMarket.QuoteCurrencyMint">
             <summary>
             The quote currency mint, in case it is specified as a SPL token mint public key.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.LendingMarket.QuoteCurrency">
+        <member name="F:TokenLending.Models.LendingMarket.QuoteCurrency">
             <summary>
             The quote currency, in case it is specified as a ticker.
             </summary>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.LendingMarket.#ctor(System.ReadOnlySpan{System.Byte})">
+        <member name="M:TokenLending.Models.LendingMarket.#ctor(System.ReadOnlySpan{System.Byte})">
             <summary>
-            Initialize a new <see cref="T:Solnet.Programs.TokenLending.Models.LendingMarket"/> with the given data.
+            Initialize a new <see cref="T:TokenLending.Models.LendingMarket"/> with the given data.
             </summary>
             <param name="data">The data to deserialize into the structure.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.LendingMarket.Deserialize(System.Byte[])">
+        <member name="M:TokenLending.Models.LendingMarket.Deserialize(System.Byte[])">
             <summary>
-            Deserialize a byte array into the <see cref="T:Solnet.Programs.TokenLending.Models.LendingMarket"/> structure.
+            Deserialize a byte array into the <see cref="T:TokenLending.Models.LendingMarket"/> structure.
             </summary>
             <param name="data">The byte array to deserialize.</param>
-            <returns>The <see cref="T:Solnet.Programs.TokenLending.Models.LendingMarket"/> structure.</returns>
+            <returns>The <see cref="T:TokenLending.Models.LendingMarket"/> structure.</returns>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.ObligationCollateral">
+        <member name="T:TokenLending.Models.ObligationCollateral">
             <summary>
             Represents the collateral of an obligation.
             </summary>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.ObligationCollateral.Layout">
+        <member name="T:TokenLending.Models.ObligationCollateral.Layout">
             <summary>
-            The layout of the <see cref="T:Solnet.Programs.TokenLending.Models.ObligationCollateral"/> structure.
+            The layout of the <see cref="T:TokenLending.Models.ObligationCollateral"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ObligationCollateral.Layout.Length">
+        <member name="F:TokenLending.Models.ObligationCollateral.Layout.Length">
             <summary>
-            The length of the <see cref="T:Solnet.Programs.TokenLending.Models.ObligationCollateral"/> structure.
+            The length of the <see cref="T:TokenLending.Models.ObligationCollateral"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ObligationCollateral.Layout.DepositReserveOffset">
+        <member name="F:TokenLending.Models.ObligationCollateral.Layout.DepositReserveOffset">
             <summary>
             The offset at which the deposit reserve value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ObligationCollateral.Layout.DepositedAmountOffset">
+        <member name="F:TokenLending.Models.ObligationCollateral.Layout.DepositedAmountOffset">
             <summary>
             The offset at which the cumulative borrow rate value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ObligationCollateral.Layout.MarketValueOffset">
+        <member name="F:TokenLending.Models.ObligationCollateral.Layout.MarketValueOffset">
             <summary>
             The offset at which the borrow amount value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ObligationCollateral.DepositReserve">
+        <member name="F:TokenLending.Models.ObligationCollateral.DepositReserve">
             <summary>
             Reserve collateral is deposited to
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ObligationCollateral.DepositedAmount">
+        <member name="F:TokenLending.Models.ObligationCollateral.DepositedAmount">
             <summary>
             Amount of collateral deposited
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ObligationCollateral.MarketValue">
+        <member name="F:TokenLending.Models.ObligationCollateral.MarketValue">
             <summary>
             Collateral market value in quote currency
             </summary>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.ObligationCollateral.#ctor(System.ReadOnlySpan{System.Byte})">
+        <member name="M:TokenLending.Models.ObligationCollateral.#ctor(System.ReadOnlySpan{System.Byte})">
             <summary>
-            Initialize the <see cref="T:Solnet.Programs.TokenLending.Models.ObligationCollateral"/> with the given data.
+            Initialize the <see cref="T:TokenLending.Models.ObligationCollateral"/> with the given data.
             </summary>
             <param name="data">The byte array.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.ObligationCollateral.Deserialize(System.Byte[])">
+        <member name="M:TokenLending.Models.ObligationCollateral.Deserialize(System.Byte[])">
             <summary>
-            Deserialize the given byte array into the <see cref="T:Solnet.Programs.TokenLending.Models.ObligationCollateral"/> structure.
+            Deserialize the given byte array into the <see cref="T:TokenLending.Models.ObligationCollateral"/> structure.
             </summary>
             <param name="data">The byte array.</param>
-            <returns>The <see cref="T:Solnet.Programs.TokenLending.Models.ObligationCollateral"/> instance.</returns>
+            <returns>The <see cref="T:TokenLending.Models.ObligationCollateral"/> instance.</returns>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.ObligationLiquidity">
+        <member name="T:TokenLending.Models.ObligationLiquidity">
             <summary>
             Represents the the liquidity of an obligation.
             </summary>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.ObligationLiquidity.Layout">
+        <member name="T:TokenLending.Models.ObligationLiquidity.Layout">
             <summary>
-            The layout of the <see cref="T:Solnet.Programs.TokenLending.Models.ObligationLiquidity"/> structure.
+            The layout of the <see cref="T:TokenLending.Models.ObligationLiquidity"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ObligationLiquidity.Layout.Length">
+        <member name="F:TokenLending.Models.ObligationLiquidity.Layout.Length">
             <summary>
-            The length of the <see cref="T:Solnet.Programs.TokenLending.Models.ObligationLiquidity"/> structure.
+            The length of the <see cref="T:TokenLending.Models.ObligationLiquidity"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ObligationLiquidity.Layout.BorrowReserveOffset">
+        <member name="F:TokenLending.Models.ObligationLiquidity.Layout.BorrowReserveOffset">
             <summary>
             The offset at which the borrow reserve value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ObligationLiquidity.Layout.CumulativeBorrowRateOffset">
+        <member name="F:TokenLending.Models.ObligationLiquidity.Layout.CumulativeBorrowRateOffset">
             <summary>
             The offset at which the cumulative borrow rate value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ObligationLiquidity.Layout.BorrowAmountOffset">
+        <member name="F:TokenLending.Models.ObligationLiquidity.Layout.BorrowAmountOffset">
             <summary>
             The offset at which the borrow amount value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ObligationLiquidity.Layout.MarketValueOffset">
+        <member name="F:TokenLending.Models.ObligationLiquidity.Layout.MarketValueOffset">
             <summary>
             The offset at which the market value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ObligationLiquidity.BorrowReserve">
+        <member name="F:TokenLending.Models.ObligationLiquidity.BorrowReserve">
             <summary>
             Reserve liquidity is borrowed from
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ObligationLiquidity.CumulativeBorrowRateWads">
+        <member name="F:TokenLending.Models.ObligationLiquidity.CumulativeBorrowRateWads">
             <summary>
             Borrow rate used for calculating interest
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ObligationLiquidity.BorrowedAmountWads">
+        <member name="F:TokenLending.Models.ObligationLiquidity.BorrowedAmountWads">
             <summary>
             Amount of liquidity borrowed plus interest
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ObligationLiquidity.MarketValue">
+        <member name="F:TokenLending.Models.ObligationLiquidity.MarketValue">
             <summary>
             Liquidity market value in quote currency
             </summary>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.ObligationLiquidity.#ctor(System.ReadOnlySpan{System.Byte})">
+        <member name="M:TokenLending.Models.ObligationLiquidity.#ctor(System.ReadOnlySpan{System.Byte})">
             <summary>
-            Initialize the <see cref="T:Solnet.Programs.TokenLending.Models.ObligationLiquidity"/> with the given data.
+            Initialize the <see cref="T:TokenLending.Models.ObligationLiquidity"/> with the given data.
             </summary>
             <param name="data">The byte array.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.ObligationLiquidity.Deserialize(System.Byte[])">
+        <member name="M:TokenLending.Models.ObligationLiquidity.Deserialize(System.Byte[])">
             <summary>
-            Deserialize the given byte array into the <see cref="T:Solnet.Programs.TokenLending.Models.ObligationLiquidity"/> structure.
+            Deserialize the given byte array into the <see cref="T:TokenLending.Models.ObligationLiquidity"/> structure.
             </summary>
             <param name="data">The byte array.</param>
-            <returns>The <see cref="T:Solnet.Programs.TokenLending.Models.ObligationLiquidity"/> instance.</returns>
+            <returns>The <see cref="T:TokenLending.Models.ObligationLiquidity"/> instance.</returns>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.Obligation">
+        <member name="T:TokenLending.Models.Obligation">
             <summary>
             Represents an obligation.
             </summary>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.Obligation.Layout">
+        <member name="T:TokenLending.Models.Obligation.Layout">
             <summary>
-            The layout of the <see cref="T:Solnet.Programs.TokenLending.Models.Obligation"/> structure.
+            The layout of the <see cref="T:TokenLending.Models.Obligation"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.Layout.Length">
+        <member name="F:TokenLending.Models.Obligation.Layout.Length">
             <summary>
-            The length of the <see cref="T:Solnet.Programs.TokenLending.Models.Obligation"/> structure.
+            The length of the <see cref="T:TokenLending.Models.Obligation"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.Layout.VersionOffset">
+        <member name="F:TokenLending.Models.Obligation.Layout.VersionOffset">
             <summary>
             The offset at which the version value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.Layout.LastUpdateOffset">
+        <member name="F:TokenLending.Models.Obligation.Layout.LastUpdateOffset">
             <summary>
             The offset at which the last update value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.Layout.LendingMarketOffset">
+        <member name="F:TokenLending.Models.Obligation.Layout.LendingMarketOffset">
             <summary>
             The offset at which the lending market value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.Layout.OwnerOffset">
+        <member name="F:TokenLending.Models.Obligation.Layout.OwnerOffset">
             <summary>
             The offset at which the liquidity value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.Layout.DepositsOffset">
+        <member name="F:TokenLending.Models.Obligation.Layout.DepositsOffset">
             <summary>
             The offset at which the deposits vector begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.Layout.DepositedValueOffset">
+        <member name="F:TokenLending.Models.Obligation.Layout.DepositedValueOffset">
             <summary>
             The offset for the deposited value, only valid after reading the deposits and borrows vectors.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.Layout.BorrowedValueOffset">
+        <member name="F:TokenLending.Models.Obligation.Layout.BorrowedValueOffset">
             <summary>
             The offset for the deposited value, only valid after reading the deposits and borrows vectors.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.Layout.AllowedBorrowValueOffset">
+        <member name="F:TokenLending.Models.Obligation.Layout.AllowedBorrowValueOffset">
             <summary>
             The offset for the deposited value, only valid after reading the deposits and borrows vectors.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.Layout.UnhealthyBorrowValueOffset">
+        <member name="F:TokenLending.Models.Obligation.Layout.UnhealthyBorrowValueOffset">
             <summary>
             The offset for the deposited value, only valid after reading the deposits and borrows vectors.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.Version">
+        <member name="F:TokenLending.Models.Obligation.Version">
             <summary>
             Version of the struct
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.LastUpdate">
+        <member name="F:TokenLending.Models.Obligation.LastUpdate">
             <summary>
             Last slot when supply and rates updated
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.LendingMarket">
+        <member name="F:TokenLending.Models.Obligation.LendingMarket">
             <summary>
             Lending market public key
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.Owner">
+        <member name="F:TokenLending.Models.Obligation.Owner">
             <summary>
             Owner authority which can borrow liquidity
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.Deposits">
+        <member name="F:TokenLending.Models.Obligation.Deposits">
             <summary>
             Deposited collateral for the obligation, unique by deposit reserve address
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.Borrows">
+        <member name="F:TokenLending.Models.Obligation.Borrows">
             <summary>
             Borrowed liquidity for the obligation, unique by borrow reserve address
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.DepositedValue">
+        <member name="F:TokenLending.Models.Obligation.DepositedValue">
             <summary>
             Market value of deposits
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.BorrowedValue">
+        <member name="F:TokenLending.Models.Obligation.BorrowedValue">
             <summary>
             Market value of borrows
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.AllowedBorrowValue">
+        <member name="F:TokenLending.Models.Obligation.AllowedBorrowValue">
             <summary>
             The maximum borrow value at the weighted average loan to value ratio
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Obligation.UnhealthyBorrowValue">
+        <member name="F:TokenLending.Models.Obligation.UnhealthyBorrowValue">
             <summary>
             The dangerous borrow value at the weighted average liquidation threshold
             </summary>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.Obligation.#ctor(System.ReadOnlySpan{System.Byte})">
+        <member name="M:TokenLending.Models.Obligation.#ctor(System.ReadOnlySpan{System.Byte})">
             <summary>
-            Initialize the <see cref="T:Solnet.Programs.TokenLending.Models.Obligation"/> with the given data.
+            Initialize the <see cref="T:TokenLending.Models.Obligation"/> with the given data.
             </summary>
             <param name="data">The byte array.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.Obligation.Deserialize(System.Byte[])">
+        <member name="M:TokenLending.Models.Obligation.Deserialize(System.Byte[])">
             <summary>
-            Deserialize the given byte array into the <see cref="T:Solnet.Programs.TokenLending.Models.Obligation"/> structure.
+            Deserialize the given byte array into the <see cref="T:TokenLending.Models.Obligation"/> structure.
             </summary>
             <param name="data">The byte array.</param>
-            <returns>The <see cref="T:Solnet.Programs.TokenLending.Models.Obligation"/> instance.</returns>
+            <returns>The <see cref="T:TokenLending.Models.Obligation"/> instance.</returns>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.ReserveLiquidity">
+        <member name="T:TokenLending.Models.ReserveLiquidity">
             <summary>
             Reserve liquidity
             </summary>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.ReserveLiquidity.Layout">
+        <member name="T:TokenLending.Models.ReserveLiquidity.Layout">
             <summary>
-            The layout of the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveLiquidity"/> structure.
+            The layout of the <see cref="T:TokenLending.Models.ReserveLiquidity"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.Layout.Length">
+        <member name="F:TokenLending.Models.ReserveLiquidity.Layout.Length">
             <summary>
-            The length of the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveLiquidity"/> structure.
+            The length of the <see cref="T:TokenLending.Models.ReserveLiquidity"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.Layout.MintOffset">
+        <member name="F:TokenLending.Models.ReserveLiquidity.Layout.MintOffset">
             <summary>
             The offset at which the mint value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.Layout.DecimalsOffset">
+        <member name="F:TokenLending.Models.ReserveLiquidity.Layout.DecimalsOffset">
             <summary>
             The offset at which the decimals value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.Layout.SupplyOffset">
+        <member name="F:TokenLending.Models.ReserveLiquidity.Layout.SupplyOffset">
             <summary>
             The offset at which the supply value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.Layout.FeeReceiverOffset">
+        <member name="F:TokenLending.Models.ReserveLiquidity.Layout.FeeReceiverOffset">
             <summary>
             The offset at which the fee receiver value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.Layout.OracleOffset">
+        <member name="F:TokenLending.Models.ReserveLiquidity.Layout.OracleOffset">
             <summary>
             The offset at which the oracle value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.Layout.AvailableAmountOffset">
+        <member name="F:TokenLending.Models.ReserveLiquidity.Layout.AvailableAmountOffset">
             <summary>
             The offset at which the available amount offset begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.Layout.BorrowedAmountOffset">
+        <member name="F:TokenLending.Models.ReserveLiquidity.Layout.BorrowedAmountOffset">
             <summary>
             The offset at which the borrow amount value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.Layout.CumulativeBorrowAmountOffset">
+        <member name="F:TokenLending.Models.ReserveLiquidity.Layout.CumulativeBorrowAmountOffset">
             <summary>
             The offset at which the cumulative borrow amount value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.Layout.MarketPriceOffset">
+        <member name="F:TokenLending.Models.ReserveLiquidity.Layout.MarketPriceOffset">
             <summary>
             The offset at which the market price value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.Mint">
+        <member name="F:TokenLending.Models.ReserveLiquidity.Mint">
             <summary>
             Reserve liquidity mint address
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.Decimals">
+        <member name="F:TokenLending.Models.ReserveLiquidity.Decimals">
             <summary>
             Reserve liquidity mint decimals
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.Supply">
+        <member name="F:TokenLending.Models.ReserveLiquidity.Supply">
             <summary>
             Reserve liquidity supply address
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.FeeReceiver">
+        <member name="F:TokenLending.Models.ReserveLiquidity.FeeReceiver">
             <summary>
             Reserve liquidity fee receiver address
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.Oracle">
+        <member name="F:TokenLending.Models.ReserveLiquidity.Oracle">
             <summary>
             Reserve liquidity oracle account
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.AvailableAmount">
+        <member name="F:TokenLending.Models.ReserveLiquidity.AvailableAmount">
             <summary>
             Reserve liquidity available
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.BorrowedAmountWads">
+        <member name="F:TokenLending.Models.ReserveLiquidity.BorrowedAmountWads">
             <summary>
             Reserve liquidity borrowed
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.CumulativeBorrowAmountWads">
+        <member name="F:TokenLending.Models.ReserveLiquidity.CumulativeBorrowAmountWads">
             <summary>
             Reserve liquidity cumulative borrow rate
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveLiquidity.MarketPrice">
+        <member name="F:TokenLending.Models.ReserveLiquidity.MarketPrice">
             <summary>
             Reserve liquidity market price in quote currency
             </summary>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.ReserveLiquidity.#ctor(System.ReadOnlySpan{System.Byte})">
+        <member name="M:TokenLending.Models.ReserveLiquidity.#ctor(System.ReadOnlySpan{System.Byte})">
             <summary>
-            Initiaize the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveLiquidity"/> with the given data.
+            Initiaize the <see cref="T:TokenLending.Models.ReserveLiquidity"/> with the given data.
             </summary>
             <param name="data">The byte array.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.ReserveLiquidity.Deserialize(System.Byte[])">
+        <member name="M:TokenLending.Models.ReserveLiquidity.Deserialize(System.Byte[])">
             <summary>
-            Deserialize the given byte array into the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveLiquidity"/> structure.
+            Deserialize the given byte array into the <see cref="T:TokenLending.Models.ReserveLiquidity"/> structure.
             </summary>
             <param name="data">The byte array.</param>
-            <returns>The <see cref="T:Solnet.Programs.TokenLending.Models.ReserveLiquidity"/> instance.</returns>
+            <returns>The <see cref="T:TokenLending.Models.ReserveLiquidity"/> instance.</returns>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.ReserveCollateral">
+        <member name="T:TokenLending.Models.ReserveCollateral">
             <summary>
             Reserve collateral
             </summary>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.ReserveCollateral.Layout">
+        <member name="T:TokenLending.Models.ReserveCollateral.Layout">
             <summary>
-            The layout of the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveCollateral"/> structure.
+            The layout of the <see cref="T:TokenLending.Models.ReserveCollateral"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveCollateral.Layout.Length">
+        <member name="F:TokenLending.Models.ReserveCollateral.Layout.Length">
             <summary>
-            The length of the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveCollateral"/> structure.
+            The length of the <see cref="T:TokenLending.Models.ReserveCollateral"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveCollateral.Layout.MintOffset">
+        <member name="F:TokenLending.Models.ReserveCollateral.Layout.MintOffset">
             <summary>
             The offset at which the borrow fee value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveCollateral.Layout.TotalSupplyOffset">
+        <member name="F:TokenLending.Models.ReserveCollateral.Layout.TotalSupplyOffset">
             <summary>
             The offset at which the flash loan fee value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveCollateral.Layout.SupplyOffset">
+        <member name="F:TokenLending.Models.ReserveCollateral.Layout.SupplyOffset">
             <summary>
             The offset at which the host fee percentage value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveCollateral.Mint">
+        <member name="F:TokenLending.Models.ReserveCollateral.Mint">
             <summary>
             Reserve collateral mint address
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveCollateral.TotalSupply">
+        <member name="F:TokenLending.Models.ReserveCollateral.TotalSupply">
             <summary>
             Reserve collateral mint supply, used for exchange rate
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveCollateral.Supply">
+        <member name="F:TokenLending.Models.ReserveCollateral.Supply">
             <summary>
             Reserve collateral supply address
             </summary>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.ReserveCollateral.#ctor(System.ReadOnlySpan{System.Byte})">
+        <member name="M:TokenLending.Models.ReserveCollateral.#ctor(System.ReadOnlySpan{System.Byte})">
             <summary>
-            Initialize the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveCollateral"/> with the given data.
+            Initialize the <see cref="T:TokenLending.Models.ReserveCollateral"/> with the given data.
             </summary>
             <param name="data">The byte array.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.ReserveCollateral.Deserialize(System.Byte[])">
+        <member name="M:TokenLending.Models.ReserveCollateral.Deserialize(System.Byte[])">
             <summary>
-            Deserialize the given byte array into the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveCollateral"/> structure.
+            Deserialize the given byte array into the <see cref="T:TokenLending.Models.ReserveCollateral"/> structure.
             </summary>
             <param name="data">The byte array.</param>
-            <returns>The <see cref="T:Solnet.Programs.TokenLending.Models.ReserveCollateral"/> instance.</returns>
+            <returns>The <see cref="T:TokenLending.Models.ReserveCollateral"/> instance.</returns>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.ReserveFees">
+        <member name="T:TokenLending.Models.ReserveFees">
              <summary>
              Additional fee information on a reserve.
             
@@ -585,32 +585,32 @@
              repayments and liquidations.
              </summary>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.ReserveFees.Layout">
+        <member name="T:TokenLending.Models.ReserveFees.Layout">
             <summary>
-            The layout of the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveFees"/> structure.
+            The layout of the <see cref="T:TokenLending.Models.ReserveFees"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveFees.Layout.Length">
+        <member name="F:TokenLending.Models.ReserveFees.Layout.Length">
             <summary>
-            The length of the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveFees"/>  structure.
+            The length of the <see cref="T:TokenLending.Models.ReserveFees"/>  structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveFees.Layout.BorrowFeeWadOffset">
+        <member name="F:TokenLending.Models.ReserveFees.Layout.BorrowFeeWadOffset">
             <summary>
             The offset at which the borrow fee value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveFees.Layout.FlashLoanFeeWadOffset">
+        <member name="F:TokenLending.Models.ReserveFees.Layout.FlashLoanFeeWadOffset">
             <summary>
             The offset at which the flash loan fee value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveFees.Layout.HostFeePercentageOffset">
+        <member name="F:TokenLending.Models.ReserveFees.Layout.HostFeePercentageOffset">
             <summary>
             The offset at which the host fee percentage value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveFees.BorrowFeeWad">
+        <member name="F:TokenLending.Models.ReserveFees.BorrowFeeWad">
             <summary>
             Fee assessed on `BorrowObligationLiquidity`, expressed as a Wad.
             Must be between 0 and 10^18, such that 10^18 = 1.  A few examples for
@@ -620,242 +620,242 @@
             0.00001% (Aave borrow fee) = 100_000_000_000
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveFees.FlashLoanFeeWad">
+        <member name="F:TokenLending.Models.ReserveFees.FlashLoanFeeWad">
             <summary>
             Fee for flash loan, expressed as a Wad.
             0.3% (Aave flash loan fee) = 3_000_000_000_000_000
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveFees.HostFeePercentage">
+        <member name="F:TokenLending.Models.ReserveFees.HostFeePercentage">
             <summary>
             Amount of fee going to host account, if provided in liquidate and repay
             </summary>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.ReserveFees.#ctor(System.ReadOnlySpan{System.Byte})">
+        <member name="M:TokenLending.Models.ReserveFees.#ctor(System.ReadOnlySpan{System.Byte})">
             <summary>
-            Initialize the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveFees"/> with the given data.
+            Initialize the <see cref="T:TokenLending.Models.ReserveFees"/> with the given data.
             </summary>
             <param name="data">The byte array.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.ReserveFees.Deserialize(System.Byte[])">
+        <member name="M:TokenLending.Models.ReserveFees.Deserialize(System.Byte[])">
             <summary>
-            Deserialize the given byte array into the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveFees"/> structure.
+            Deserialize the given byte array into the <see cref="T:TokenLending.Models.ReserveFees"/> structure.
             </summary>
             <param name="data">The byte array.</param>
-            <returns>The <see cref="T:Solnet.Programs.TokenLending.Models.ReserveFees"/> instance.</returns>
+            <returns>The <see cref="T:TokenLending.Models.ReserveFees"/> instance.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.ReserveFees.Serialize(System.Byte[],System.Int32)">
+        <member name="M:TokenLending.Models.ReserveFees.Serialize(System.Byte[],System.Int32)">
             <summary>
-            Serializes the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveFees"/> object to the given buffer at the desired offset.
+            Serializes the <see cref="T:TokenLending.Models.ReserveFees"/> object to the given buffer at the desired offset.
             </summary>
             <param name="buffer">The buffer to serialize into.</param>
             <param name="offset">The offset at which to begin serialization.</param>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.ReserveConfig">
+        <member name="T:TokenLending.Models.ReserveConfig">
             <summary>
             Reserve configuration values
             </summary>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.ReserveConfig.Layout">
+        <member name="T:TokenLending.Models.ReserveConfig.Layout">
             <summary>
-            The layout of the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveConfig"/> structure.
+            The layout of the <see cref="T:TokenLending.Models.ReserveConfig"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.Layout.Length">
+        <member name="F:TokenLending.Models.ReserveConfig.Layout.Length">
             <summary>
-            The length of the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveConfig"/> structure.
+            The length of the <see cref="T:TokenLending.Models.ReserveConfig"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.Layout.OptimalUtilizationRateOffset">
+        <member name="F:TokenLending.Models.ReserveConfig.Layout.OptimalUtilizationRateOffset">
             <summary>
             The offset at which the optimal utilization rate value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.Layout.LoanToValueRatioOffset">
+        <member name="F:TokenLending.Models.ReserveConfig.Layout.LoanToValueRatioOffset">
             <summary>
             The offset at which the loan to value ratio value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.Layout.LiquidationBonusOffset">
+        <member name="F:TokenLending.Models.ReserveConfig.Layout.LiquidationBonusOffset">
             <summary>
             The offset at which the liquidation bonus value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.Layout.LiquidationThresholdOffset">
+        <member name="F:TokenLending.Models.ReserveConfig.Layout.LiquidationThresholdOffset">
             <summary>
             The offset at which the liquidation threshold value begins-
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.Layout.MinBorrowRateOffset">
+        <member name="F:TokenLending.Models.ReserveConfig.Layout.MinBorrowRateOffset">
             <summary>
             The offset at which the minimum borrow rate value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.Layout.OptimalBorrowRateOffset">
+        <member name="F:TokenLending.Models.ReserveConfig.Layout.OptimalBorrowRateOffset">
             <summary>
             The offset at which the optimal borrow rate value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.Layout.MaxBorrowRateOffset">
+        <member name="F:TokenLending.Models.ReserveConfig.Layout.MaxBorrowRateOffset">
             <summary>
             The offset at which the maximum borrow rate value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.Layout.FeesOffset">
+        <member name="F:TokenLending.Models.ReserveConfig.Layout.FeesOffset">
             <summary>
             The offset at which the fees value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.OptimalUtilizationRate">
+        <member name="F:TokenLending.Models.ReserveConfig.OptimalUtilizationRate">
             <summary>
             Optimal utilization rate, as a percentage
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.LoanToValueRatio">
+        <member name="F:TokenLending.Models.ReserveConfig.LoanToValueRatio">
             <summary>
             Target ratio of the value of borrows to deposits, as a percentage
             0 if use as collateral is disabled
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.LiquidationBonus">
+        <member name="F:TokenLending.Models.ReserveConfig.LiquidationBonus">
             <summary>
             Bonus a liquidator gets when repaying part of an unhealthy obligation, as a percentage
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.LiquidationThreshold">
+        <member name="F:TokenLending.Models.ReserveConfig.LiquidationThreshold">
             <summary>
             Loan to value ratio at which an obligation can be liquidated, as a percentage
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.MinBorrowRate">
+        <member name="F:TokenLending.Models.ReserveConfig.MinBorrowRate">
             <summary>
             Min borrow APY
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.OptimalBorrowRate">
+        <member name="F:TokenLending.Models.ReserveConfig.OptimalBorrowRate">
             <summary>
             Optimal (utilization) borrow APY
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.MaxBorrowRate">
+        <member name="F:TokenLending.Models.ReserveConfig.MaxBorrowRate">
             <summary>
             Max borrow APY
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.ReserveConfig.Fees">
+        <member name="F:TokenLending.Models.ReserveConfig.Fees">
             <summary>
             Program owner fees assessed, separate from gains due to interest accrual
             </summary>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.ReserveConfig.#ctor(System.ReadOnlySpan{System.Byte})">
+        <member name="M:TokenLending.Models.ReserveConfig.#ctor(System.ReadOnlySpan{System.Byte})">
             <summary>
-            Initialize the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveConfig"/> with the given data.
+            Initialize the <see cref="T:TokenLending.Models.ReserveConfig"/> with the given data.
             </summary>
             <param name="data">The byte array.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.ReserveConfig.Deserialize(System.Byte[])">
+        <member name="M:TokenLending.Models.ReserveConfig.Deserialize(System.Byte[])">
             <summary>
-            Deserialize the given byte array into the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveConfig"/> structure.
+            Deserialize the given byte array into the <see cref="T:TokenLending.Models.ReserveConfig"/> structure.
             </summary>
             <param name="data">The byte array.</param>
-            <returns>The <see cref="T:Solnet.Programs.TokenLending.Models.ReserveConfig"/> instance.</returns>
+            <returns>The <see cref="T:TokenLending.Models.ReserveConfig"/> instance.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.ReserveConfig.Serialize(System.Byte[],System.Int32)">
+        <member name="M:TokenLending.Models.ReserveConfig.Serialize(System.Byte[],System.Int32)">
             <summary>
-            Serializes the <see cref="T:Solnet.Programs.TokenLending.Models.ReserveConfig"/> object to the given buffer at the desired offset.
+            Serializes the <see cref="T:TokenLending.Models.ReserveConfig"/> object to the given buffer at the desired offset.
             </summary>
             <param name="buffer">The buffer to serialize into.</param>
             <param name="offset">The offset at which to begin serialization.</param>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.Reserve">
+        <member name="T:TokenLending.Models.Reserve">
             <summary>
             Lending market reserve state
             </summary>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.Models.Reserve.Layout">
+        <member name="T:TokenLending.Models.Reserve.Layout">
             <summary>
-            The layout of the <see cref="T:Solnet.Programs.TokenLending.Models.Reserve"/> structure.
+            The layout of the <see cref="T:TokenLending.Models.Reserve"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Reserve.Layout.Length">
+        <member name="F:TokenLending.Models.Reserve.Layout.Length">
             <summary>
-            The length of the <see cref="T:Solnet.Programs.TokenLending.Models.Reserve"/> structure.
+            The length of the <see cref="T:TokenLending.Models.Reserve"/> structure.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Reserve.Layout.VersionOffset">
+        <member name="F:TokenLending.Models.Reserve.Layout.VersionOffset">
             <summary>
             The offset at which the version value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Reserve.Layout.LastUpdateOffset">
+        <member name="F:TokenLending.Models.Reserve.Layout.LastUpdateOffset">
             <summary>
             The offset at which the last update value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Reserve.Layout.LendingMarketOffset">
+        <member name="F:TokenLending.Models.Reserve.Layout.LendingMarketOffset">
             <summary>
             The offset at which the lending market value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Reserve.Layout.LiquidityOffset">
+        <member name="F:TokenLending.Models.Reserve.Layout.LiquidityOffset">
             <summary>
             The offset at which the liquidity value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Reserve.Layout.CollateralOffset">
+        <member name="F:TokenLending.Models.Reserve.Layout.CollateralOffset">
             <summary>
             The offset at which the collateral value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Reserve.Layout.ConfigOffset">
+        <member name="F:TokenLending.Models.Reserve.Layout.ConfigOffset">
             <summary>
             The offset at which the config value begins.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Reserve.Version">
+        <member name="F:TokenLending.Models.Reserve.Version">
             <summary>
             Version of the struct
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Reserve.LastUpdate">
+        <member name="F:TokenLending.Models.Reserve.LastUpdate">
             <summary>
             Last slot when supply and rates updated
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Reserve.LendingMarket">
+        <member name="F:TokenLending.Models.Reserve.LendingMarket">
             <summary>
             Lending market public key
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Reserve.Liquidity">
+        <member name="F:TokenLending.Models.Reserve.Liquidity">
             <summary>
             Reserve liquidity
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Reserve.Collateral">
+        <member name="F:TokenLending.Models.Reserve.Collateral">
             <summary>
             Reserve collateral
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.Models.Reserve.Config">
+        <member name="F:TokenLending.Models.Reserve.Config">
             <summary>
             Reserve configuration values
             </summary>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.Reserve.#ctor(System.ReadOnlySpan{System.Byte})">
+        <member name="M:TokenLending.Models.Reserve.#ctor(System.ReadOnlySpan{System.Byte})">
             <summary>
-            Initialize the <see cref="T:Solnet.Programs.TokenLending.Models.Reserve"/> with the given data.
+            Initialize the <see cref="T:TokenLending.Models.Reserve"/> with the given data.
             </summary>
             <param name="data">The byte array.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.Models.Reserve.Deserialize(System.Byte[])">
+        <member name="M:TokenLending.Models.Reserve.Deserialize(System.Byte[])">
             <summary>
-            Deserialize the given byte array into the <see cref="T:Solnet.Programs.TokenLending.Models.Reserve"/> structure.
+            Deserialize the given byte array into the <see cref="T:TokenLending.Models.Reserve"/> structure.
             </summary>
             <param name="data">The byte array.</param>
-            <returns>The <see cref="T:Solnet.Programs.TokenLending.Models.Reserve"/> instance.</returns>
+            <returns>The <see cref="T:TokenLending.Models.Reserve"/> instance.</returns>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.TokenLendingProgram">
+        <member name="T:TokenLending.TokenLendingProgram">
             <summary>
             Implements the Token Lending Program methods.
             <remarks>
@@ -865,7 +865,7 @@
             </remarks>
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgram.MainNetProgramIdKey">
+        <member name="F:TokenLending.TokenLendingProgram.MainNetProgramIdKey">
             <summary>
             SPL Token Lending Program MainNet Program ID.
             <remarks>
@@ -874,38 +874,38 @@
             </remarks>
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgram.DevNetProgramIdKey">
+        <member name="F:TokenLending.TokenLendingProgram.DevNetProgramIdKey">
             <summary>
             SPL Token Lending Program DevNet Program ID.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgram.DefaultProgramName">
+        <member name="F:TokenLending.TokenLendingProgram.DefaultProgramName">
             <summary>
             SPL Token Lending Program Name.
             </summary>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.#ctor(Solnet.Wallet.PublicKey,System.String)">
+        <member name="M:TokenLending.TokenLendingProgram.#ctor(Solnet.Wallet.PublicKey,System.String)">
             <summary>
-            Initialize the <see cref="T:Solnet.Programs.TokenLending.TokenLendingProgram"/> with the given program id key and program name.
+            Initialize the <see cref="T:TokenLending.TokenLendingProgram"/> with the given program id key and program name.
             </summary>
             <param name="programIdKey">The program id key.</param>
             <param name="programName">The program name.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.CreateDevNet">
+        <member name="M:TokenLending.TokenLendingProgram.CreateDevNet">
             <summary>
-            Initialize the <see cref="T:Solnet.Programs.TokenLending.TokenLendingProgram"/> for <see cref="F:Solnet.Rpc.Cluster.DevNet"/>.
+            Initialize the <see cref="T:TokenLending.TokenLendingProgram"/> for <see cref="F:Solnet.Rpc.Cluster.DevNet"/>.
             </summary>
-            <returns>The <see cref="T:Solnet.Programs.TokenLending.TokenLendingProgram"/> instance.</returns>
+            <returns>The <see cref="T:TokenLending.TokenLendingProgram"/> instance.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.CreateMainNet">
+        <member name="M:TokenLending.TokenLendingProgram.CreateMainNet">
             <summary>
-            Initialize the <see cref="T:Solnet.Programs.TokenLending.TokenLendingProgram"/> for <see cref="F:Solnet.Rpc.Cluster.MainNet"/>.
+            Initialize the <see cref="T:TokenLending.TokenLendingProgram"/> for <see cref="F:Solnet.Rpc.Cluster.MainNet"/>.
             </summary>
-            <returns>The <see cref="T:Solnet.Programs.TokenLending.TokenLendingProgram"/> instance.</returns>
+            <returns>The <see cref="T:TokenLending.TokenLendingProgram"/> instance.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.InitializeLendingMarket(Solnet.Wallet.PublicKey,System.Byte[],Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:TokenLending.TokenLendingProgram.InitializeLendingMarket(Solnet.Wallet.PublicKey,System.Byte[],Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
-            Initializes an instruction to initialize a <see cref="T:Solnet.Programs.TokenLending.Models.LendingMarket"/>.
+            Initializes an instruction to initialize a <see cref="T:TokenLending.Models.LendingMarket"/>.
             </summary>
             <param name="owner">The public key of the owner.</param>
             <param name="quoteCurrency">The quote currency.</param>
@@ -913,9 +913,9 @@
             <param name="oracleProgramId">The public key of the oracle program.</param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.InitializeLendingMarket(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,System.Byte[],Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:TokenLending.TokenLendingProgram.InitializeLendingMarket(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,System.Byte[],Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
-            Initializes an instruction to initialize a <see cref="T:Solnet.Programs.TokenLending.Models.LendingMarket"/>.
+            Initializes an instruction to initialize a <see cref="T:TokenLending.Models.LendingMarket"/>.
             </summary>
             <param name="programIdKey">The public key of the program.</param>
             <param name="owner">The public key of the owner.</param>
@@ -924,18 +924,18 @@
             <param name="oracleProgramId">The public key of the oracle program.</param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.SetLendingMarketOwner(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:TokenLending.TokenLendingProgram.SetLendingMarketOwner(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
-            Initializes an instruction to set a <see cref="T:Solnet.Programs.TokenLending.Models.LendingMarket"/> owner.
+            Initializes an instruction to set a <see cref="T:TokenLending.Models.LendingMarket"/> owner.
             </summary>
             <param name="lendingMarket">The public key of the lending market.</param>
             <param name="lendingMarketOwner">The public key of the current lending market owner.</param>
             <param name="newOwner">The public key of the new owner.</param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.SetLendingMarketOwner(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:TokenLending.TokenLendingProgram.SetLendingMarketOwner(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
-            Initializes an instruction to set a <see cref="T:Solnet.Programs.TokenLending.Models.LendingMarket"/> owner.
+            Initializes an instruction to set a <see cref="T:TokenLending.Models.LendingMarket"/> owner.
             </summary>
             <param name="programIdKey">The public key of the program.</param>
             <param name="lendingMarket">The public key of the lending market.</param>
@@ -943,7 +943,7 @@
             <param name="newOwner">The public key of the new owner.</param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.InitializeReserve(Solnet.Wallet.PublicKey,System.UInt64,Solnet.Programs.TokenLending.Models.ReserveConfig,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:TokenLending.TokenLendingProgram.InitializeReserve(Solnet.Wallet.PublicKey,System.UInt64,TokenLending.Models.ReserveConfig,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
             
             </summary>
@@ -965,7 +965,7 @@
             <param name="userTransferAuthority"></param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.RefreshReserve(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:TokenLending.TokenLendingProgram.RefreshReserve(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
             
             </summary>
@@ -974,7 +974,7 @@
             <param name="reserveLiquidityOracle"></param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.DepositReserveLiquidity(Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:TokenLending.TokenLendingProgram.DepositReserveLiquidity(Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
             
             </summary>
@@ -989,7 +989,7 @@
             <param name="userTransferAuthority"></param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.RedeemReserveCollateral(Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:TokenLending.TokenLendingProgram.RedeemReserveCollateral(Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
             
             </summary>
@@ -1004,7 +1004,7 @@
             <param name="userTransferAuthority"></param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.InitializeObligation(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:TokenLending.TokenLendingProgram.InitializeObligation(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
             
             </summary>
@@ -1014,7 +1014,7 @@
             <param name="obligationOwner"></param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.RefreshObligation(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,System.Collections.Generic.IList{Solnet.Wallet.PublicKey})">
+        <member name="M:TokenLending.TokenLendingProgram.RefreshObligation(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,System.Collections.Generic.IList{Solnet.Wallet.PublicKey})">
             <summary>
             
             </summary>
@@ -1023,7 +1023,7 @@
             <param name="reserves"></param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.DepositObligationCollateral(Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:TokenLending.TokenLendingProgram.DepositObligationCollateral(Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
             
             </summary>
@@ -1038,7 +1038,7 @@
             <param name="userTransferAuthority"></param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.WithdrawObligationCollateral(Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:TokenLending.TokenLendingProgram.WithdrawObligationCollateral(Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
             
             </summary>
@@ -1052,7 +1052,7 @@
             <param name="obligationOwner"></param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.BorrowObligationLiduidity(Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:TokenLending.TokenLendingProgram.BorrowObligationLiduidity(Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
             
             </summary>
@@ -1068,7 +1068,7 @@
             <param name="hostFeeReceiver"></param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.RepayObligationLiduidity(Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:TokenLending.TokenLendingProgram.RepayObligationLiduidity(Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
             
             </summary>
@@ -1082,7 +1082,7 @@
             <param name="userTransferAuthority"></param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgram.LiquidateObligation(Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:TokenLending.TokenLendingProgram.LiquidateObligation(Solnet.Wallet.PublicKey,System.UInt64,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
             
             </summary>
@@ -1099,237 +1099,237 @@
             <param name="userTransferAuthority"></param>
             <returns>The transaction instruction.</returns>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.TokenLendingProgramData">
+        <member name="T:TokenLending.TokenLendingProgramData">
             <summary>
             Implements the token lending program data encodings.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgramData.MethodOffset">
+        <member name="F:TokenLending.TokenLendingProgramData.MethodOffset">
             <summary>
             The offset at which to encode the value that specifies the instruction.
             </summary>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.EncodeInitializeLendingMarketData(Solnet.Wallet.PublicKey,System.Byte[])">
+        <member name="M:TokenLending.TokenLendingProgramData.EncodeInitializeLendingMarketData(Solnet.Wallet.PublicKey,System.Byte[])">
             <summary>
-            Encode the transaction instruction data for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.InitializeLendingMarket"/> method.
+            Encode the transaction instruction data for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.InitializeLendingMarket"/> method.
             </summary>
             <param name="owner"></param>
             <param name="quoteCurrency"></param>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.DecodeInitializeLendingMarketData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:TokenLending.TokenLendingProgramData.DecodeInitializeLendingMarketData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
-            Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.InitializeLendingMarket"/> method.
+            Decodes the instruction instruction data  for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.InitializeLendingMarket"/> method.
             </summary>
             <param name="decodedInstruction">The decoded instruction to add data to.</param>
             <param name="data">The instruction data to decode.</param>
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.EncodeSetLendingMarketOwnerData(Solnet.Wallet.PublicKey)">
+        <member name="M:TokenLending.TokenLendingProgramData.EncodeSetLendingMarketOwnerData(Solnet.Wallet.PublicKey)">
             <summary>
-            Encode the transaction instruction data for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.SetLendingMarketOwner"/> method.
+            Encode the transaction instruction data for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.SetLendingMarketOwner"/> method.
             </summary>
             <param name="newOwner"></param>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.DecodeSetLendingMarketOwnerData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:TokenLending.TokenLendingProgramData.DecodeSetLendingMarketOwnerData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
-            Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.SetLendingMarketOwner"/> method.
+            Decodes the instruction instruction data  for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.SetLendingMarketOwner"/> method.
             </summary>
             <param name="decodedInstruction">The decoded instruction to add data to.</param>
             <param name="data">The instruction data to decode.</param>
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.EncodeInitializeReserveData(System.UInt64,Solnet.Programs.TokenLending.Models.ReserveConfig)">
+        <member name="M:TokenLending.TokenLendingProgramData.EncodeInitializeReserveData(System.UInt64,TokenLending.Models.ReserveConfig)">
             <summary>
-            Encode the transaction instruction data for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.InitializeReserve"/> method.
+            Encode the transaction instruction data for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.InitializeReserve"/> method.
             </summary>
             <param name="liquidityAmount">The amount of liquidity.</param>
-            <param name="config">The <see cref="T:Solnet.Programs.TokenLending.Models.ReserveConfig"/>.</param>
+            <param name="config">The <see cref="T:TokenLending.Models.ReserveConfig"/>.</param>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.DecodeInitializeReserveData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:TokenLending.TokenLendingProgramData.DecodeInitializeReserveData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
-            Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.InitializeReserve"/> method.
+            Decodes the instruction instruction data  for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.InitializeReserve"/> method.
             </summary>
             <param name="decodedInstruction">The decoded instruction to add data to.</param>
             <param name="data">The instruction data to decode.</param>
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.EncodeRefreshReserveData">
+        <member name="M:TokenLending.TokenLendingProgramData.EncodeRefreshReserveData">
             <summary>
-            Encode the transaction instruction data for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.RefreshReserve"/> method.
+            Encode the transaction instruction data for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.RefreshReserve"/> method.
             </summary>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.DecodeRefreshReserveData(Solnet.Programs.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:TokenLending.TokenLendingProgramData.DecodeRefreshReserveData(Solnet.Programs.Models.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
-            Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.RefreshReserve"/> method.
+            Decodes the instruction instruction data  for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.RefreshReserve"/> method.
             </summary>
             <param name="decodedInstruction">The decoded instruction to add data to.</param>
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.EncodeDepositReserveLiquidityData(System.UInt64)">
+        <member name="M:TokenLending.TokenLendingProgramData.EncodeDepositReserveLiquidityData(System.UInt64)">
             <summary>
-            Encode the transaction instruction data for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.DepositReserveLiquidity"/> method.
+            Encode the transaction instruction data for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.DepositReserveLiquidity"/> method.
             </summary>
             <param name="liquidityAmount">The amount of liquidity.</param>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.DecodeDepositReserveLiquidityData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:TokenLending.TokenLendingProgramData.DecodeDepositReserveLiquidityData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
-            Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.DepositReserveLiquidity"/> method.
+            Decodes the instruction instruction data  for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.DepositReserveLiquidity"/> method.
             </summary>
             <param name="decodedInstruction">The decoded instruction to add data to.</param>
             <param name="data">The instruction data to decode.</param>
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.EncodeRedeemReserveCollateralData(System.UInt64)">
+        <member name="M:TokenLending.TokenLendingProgramData.EncodeRedeemReserveCollateralData(System.UInt64)">
             <summary>
-            Encode the transaction instruction data for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.RedeemReserveCollateral"/> method.
+            Encode the transaction instruction data for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.RedeemReserveCollateral"/> method.
             </summary>
             <param name="collateralAmount">The amount of collateral.</param>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.DecodeRedeemReserveCollateralData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:TokenLending.TokenLendingProgramData.DecodeRedeemReserveCollateralData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
-            Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.RedeemReserveCollateral"/> method.
+            Decodes the instruction instruction data  for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.RedeemReserveCollateral"/> method.
             </summary>
             <param name="decodedInstruction">The decoded instruction to add data to.</param>
             <param name="data">The instruction data to decode.</param>
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.EncodeInitializeObligationData">
+        <member name="M:TokenLending.TokenLendingProgramData.EncodeInitializeObligationData">
             <summary>
-            Encode the transaction instruction data for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.InitializeObligation"/> method.
+            Encode the transaction instruction data for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.InitializeObligation"/> method.
             </summary>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.DecodeInitializeObligationData(Solnet.Programs.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:TokenLending.TokenLendingProgramData.DecodeInitializeObligationData(Solnet.Programs.Models.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
-            Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.InitializeObligation"/> method.
+            Decodes the instruction instruction data  for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.InitializeObligation"/> method.
             </summary>
             <param name="decodedInstruction">The decoded instruction to add data to.</param>
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.EncodeRefreshObligationData">
+        <member name="M:TokenLending.TokenLendingProgramData.EncodeRefreshObligationData">
             <summary>
-            Encode the transaction instruction data for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.RefreshObligation"/> method.
+            Encode the transaction instruction data for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.RefreshObligation"/> method.
             </summary>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.DecodeRefreshObligationData(Solnet.Programs.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:TokenLending.TokenLendingProgramData.DecodeRefreshObligationData(Solnet.Programs.Models.DecodedInstruction,System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
-            Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.RefreshObligation"/> method.
+            Decodes the instruction instruction data  for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.RefreshObligation"/> method.
             </summary>
             <param name="decodedInstruction">The decoded instruction to add data to.</param>
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.EncodeDepositObligationCollateralData(System.UInt64)">
+        <member name="M:TokenLending.TokenLendingProgramData.EncodeDepositObligationCollateralData(System.UInt64)">
             <summary>
-            Encode the transaction instruction data for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.DepositObligationCollateral"/> method.
+            Encode the transaction instruction data for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.DepositObligationCollateral"/> method.
             </summary>
             <param name="collateralAmount">The amount of collateral.</param>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.DecodeDepositObligationCollateralData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:TokenLending.TokenLendingProgramData.DecodeDepositObligationCollateralData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
-            Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.DepositObligationCollateral"/> method.
+            Decodes the instruction instruction data  for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.DepositObligationCollateral"/> method.
             </summary>
             <param name="decodedInstruction">The decoded instruction to add data to.</param>
             <param name="data">The instruction data to decode.</param>
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.EncodeWithdrawObligationCollateralData(System.UInt64)">
+        <member name="M:TokenLending.TokenLendingProgramData.EncodeWithdrawObligationCollateralData(System.UInt64)">
             <summary>
-            Encode the transaction instruction data for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.WithdrawObligationCollateral"/> method.
+            Encode the transaction instruction data for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.WithdrawObligationCollateral"/> method.
             </summary>
             <param name="collateralAmount">The amount of collateral.</param>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.DecodeWithdrawObligationCollateralData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:TokenLending.TokenLendingProgramData.DecodeWithdrawObligationCollateralData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
-            Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.WithdrawObligationCollateral"/> method.
+            Decodes the instruction instruction data  for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.WithdrawObligationCollateral"/> method.
             </summary>
             <param name="decodedInstruction">The decoded instruction to add data to.</param>
             <param name="data">The instruction data to decode.</param>
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.EncodeBorrowObligationLiduidityData(System.UInt64)">
+        <member name="M:TokenLending.TokenLendingProgramData.EncodeBorrowObligationLiduidityData(System.UInt64)">
             <summary>
-            Encode the transaction instruction data for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.BorrowObligationLiquidity"/> method.
+            Encode the transaction instruction data for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.BorrowObligationLiquidity"/> method.
             </summary>
             <param name="liquidityAmount">The amount of liquidity.</param>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.DecodeBorrowObligationLiduidityData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:TokenLending.TokenLendingProgramData.DecodeBorrowObligationLiduidityData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
-            Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.BorrowObligationLiquidity"/> method.
+            Decodes the instruction instruction data  for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.BorrowObligationLiquidity"/> method.
             </summary>
             <param name="decodedInstruction">The decoded instruction to add data to.</param>
             <param name="data">The instruction data to decode.</param>
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.EncodeRepayObligationLiduidityData(System.UInt64)">
+        <member name="M:TokenLending.TokenLendingProgramData.EncodeRepayObligationLiduidityData(System.UInt64)">
             <summary>
-            Encode the transaction instruction data for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.RepayObligationLiquidity"/> method.
+            Encode the transaction instruction data for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.RepayObligationLiquidity"/> method.
             </summary>
             <param name="liquidityAmount">The amount of liquidity.</param>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.DecodeRepayObligationLiduidityData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:TokenLending.TokenLendingProgramData.DecodeRepayObligationLiduidityData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
-            Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.RepayObligationLiquidity"/> method.
+            Decodes the instruction instruction data  for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.RepayObligationLiquidity"/> method.
             </summary>
             <param name="decodedInstruction">The decoded instruction to add data to.</param>
             <param name="data">The instruction data to decode.</param>
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.EncodeLiquidateObligationData(System.UInt64)">
+        <member name="M:TokenLending.TokenLendingProgramData.EncodeLiquidateObligationData(System.UInt64)">
             <summary>
-            Encode the transaction instruction data for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.LiquidateObligation"/> method.
+            Encode the transaction instruction data for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.LiquidateObligation"/> method.
             </summary>
             <param name="liquidityAmount">The amount of liquidity.</param>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.DecodeLiquidateObligationData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:TokenLending.TokenLendingProgramData.DecodeLiquidateObligationData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
-            Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.LiquidateObligation"/> method.
+            Decodes the instruction instruction data  for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.LiquidateObligation"/> method.
             </summary>
             <param name="decodedInstruction">The decoded instruction to add data to.</param>
             <param name="data">The instruction data to decode.</param>
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.EncodeFlashLoanData(System.UInt64)">
+        <member name="M:TokenLending.TokenLendingProgramData.EncodeFlashLoanData(System.UInt64)">
             <summary>
-            Encode the transaction instruction data for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.FlashLoan"/> method.
+            Encode the transaction instruction data for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.FlashLoan"/> method.
             </summary>
             <param name="liquidityAmount">The amount of liquidity.</param>
             <returns>The byte array with the encoded data.</returns>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.DecodeFlashLoanData(Solnet.Programs.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
+        <member name="M:TokenLending.TokenLendingProgramData.DecodeFlashLoanData(Solnet.Programs.Models.DecodedInstruction,System.ReadOnlySpan{System.Byte},System.Collections.Generic.IList{Solnet.Wallet.PublicKey},System.Byte[])">
             <summary>
-            Decodes the instruction instruction data  for the <see cref="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.FlashLoan"/> method.
+            Decodes the instruction instruction data  for the <see cref="F:TokenLending.TokenLendingProgramInstructions.Values.FlashLoan"/> method.
             </summary>
             <param name="decodedInstruction">The decoded instruction to add data to.</param>
             <param name="data">The instruction data to decode.</param>
             <param name="keys">The account keys present in the transaction.</param>
             <param name="keyIndices">The indices of the account keys for the instruction as they appear in the transaction.</param>
         </member>
-        <member name="M:Solnet.Programs.TokenLending.TokenLendingProgramData.DeriveLendingMarketAuthority(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
+        <member name="M:TokenLending.TokenLendingProgramData.DeriveLendingMarketAuthority(Solnet.Wallet.PublicKey,Solnet.Wallet.PublicKey)">
             <summary>
             Derive the vault signer address for the given market.
             </summary>
@@ -1338,9 +1338,9 @@
             <returns>The vault signer address.</returns>
             <exception cref="T:System.Exception">Throws exception when unable to derive the vault signer address.</exception>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.TokenLendingProgramInstructions">
+        <member name="T:TokenLending.TokenLendingProgramInstructions">
             <summary>
-            Represents the instruction types for the <see cref="T:Solnet.Programs.TokenLending.TokenLendingProgram"/> along with a friendly name so as not to use reflection.
+            Represents the instruction types for the <see cref="T:TokenLending.TokenLendingProgram"/> along with a friendly name so as not to use reflection.
             <remarks>
             For more information see:
             https://spl.solana.com/token-lending
@@ -1348,87 +1348,87 @@
             </remarks>
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Names">
+        <member name="F:TokenLending.TokenLendingProgramInstructions.Names">
             <summary>
-            Represents the user-friendly names for the instruction types for the <see cref="T:Solnet.Programs.TokenLending.TokenLendingProgram"/>.
+            Represents the user-friendly names for the instruction types for the <see cref="T:TokenLending.TokenLendingProgram"/>.
             </summary>
         </member>
-        <member name="T:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values">
+        <member name="T:TokenLending.TokenLendingProgramInstructions.Values">
             <summary>
-            Represents the instruction types for the <see cref="T:Solnet.Programs.TokenLending.TokenLendingProgram"/>.
+            Represents the instruction types for the <see cref="T:TokenLending.TokenLendingProgram"/>.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.InitializeLendingMarket">
+        <member name="F:TokenLending.TokenLendingProgramInstructions.Values.InitializeLendingMarket">
             <summary>
             Initializes a new lending market.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.SetLendingMarketOwner">
+        <member name="F:TokenLending.TokenLendingProgramInstructions.Values.SetLendingMarketOwner">
             <summary>
             Sets the new owner of a lending market.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.InitializeReserve">
+        <member name="F:TokenLending.TokenLendingProgramInstructions.Values.InitializeReserve">
             <summary>
             Initializes a new lending market reserve.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.RefreshReserve">
+        <member name="F:TokenLending.TokenLendingProgramInstructions.Values.RefreshReserve">
             <summary>
             Accrue interest and update market price of liquidity on a reserve.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.DepositReserveLiquidity">
+        <member name="F:TokenLending.TokenLendingProgramInstructions.Values.DepositReserveLiquidity">
             <summary>
             Deposit liquidity into a reserve in exchange for collateral. Collateral represents a share
             of the reserve liquidity pool.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.RedeemReserveCollateral">
+        <member name="F:TokenLending.TokenLendingProgramInstructions.Values.RedeemReserveCollateral">
             <summary>
             Redeem collateral from a reserve in exchange for liquidity.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.InitializeObligation">
+        <member name="F:TokenLending.TokenLendingProgramInstructions.Values.InitializeObligation">
             <summary>
             Initializes a new lending market obligation.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.RefreshObligation">
+        <member name="F:TokenLending.TokenLendingProgramInstructions.Values.RefreshObligation">
             <summary>
             Refresh an obligation's accrued interest and collateral and liquidity prices. Requires
             refreshed reserves, as all obligation collateral deposit reserves in order, followed by all
             liquidity borrow reserves in order.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.DepositObligationCollateral">
+        <member name="F:TokenLending.TokenLendingProgramInstructions.Values.DepositObligationCollateral">
             <summary>
             Deposit collateral to an obligation. Requires a refreshed reserve.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.WithdrawObligationCollateral">
+        <member name="F:TokenLending.TokenLendingProgramInstructions.Values.WithdrawObligationCollateral">
             <summary>
             Withdraw collateral from an obligation. Requires a refreshed obligation and reserve.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.BorrowObligationLiquidity">
+        <member name="F:TokenLending.TokenLendingProgramInstructions.Values.BorrowObligationLiquidity">
             <summary>
             Borrow liquidity from a reserve by depositing collateral tokens. Requires a refreshed
             obligation and reserve.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.RepayObligationLiquidity">
+        <member name="F:TokenLending.TokenLendingProgramInstructions.Values.RepayObligationLiquidity">
             <summary>
             Repay borrowed liquidity to a reserve. Requires a refreshed obligation and reserve.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.LiquidateObligation">
+        <member name="F:TokenLending.TokenLendingProgramInstructions.Values.LiquidateObligation">
             <summary>
             Repay borrowed liquidity to a reserve to receive collateral at a discount from an unhealthy
             obligation. Requires a refreshed obligation and reserves.
             </summary>
         </member>
-        <member name="F:Solnet.Programs.TokenLending.TokenLendingProgramInstructions.Values.FlashLoan">
+        <member name="F:TokenLending.TokenLendingProgramInstructions.Values.FlashLoan">
             <summary>
             Make a flash loan.
             </summary>

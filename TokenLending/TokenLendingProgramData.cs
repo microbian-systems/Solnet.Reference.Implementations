@@ -1,14 +1,9 @@
-﻿using Solnet.Programs.TokenLending.Models;
+﻿using Solnet.Programs.Models;
 using Solnet.Programs.Utilities;
-using Solnet.Rpc.Utilities;
 using Solnet.Wallet;
-using System;
-using System.Collections.Generic;
-using Solnet.Extensions;
-using Solnet.Extensions.TokenMint;
-using Solnet.Extensions.Models;
+using TokenLending.Models;
 
-namespace Solnet.Programs.TokenLending
+namespace TokenLending
 {
     /// <summary>
     /// Implements the token lending program data encodings.

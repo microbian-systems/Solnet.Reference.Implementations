@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Solnet.Programs.TokenLending
+﻿namespace TokenLending
 {
     /// <summary>
     /// Represents the instruction types for the <see cref="TokenLendingProgram"/> along with a friendly name so as not to use reflection.

@@ -1,9 +1,8 @@
-﻿using Solnet.Programs.Utilities;
-using System;
-using System.Numerics;
+﻿using System.Numerics;
+using Solnet.Programs.Utilities;
 using Solnet.Wallet;
 
-namespace Solnet.Programs.TokenLending.Models
+namespace TokenLending.Models
 {
     /// <summary>
     /// Reserve liquidity

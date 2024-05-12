@@ -1,10 +1,8 @@
-﻿using Solnet.Programs.Utilities;
+﻿using System.Numerics;
+using Solnet.Programs.Utilities;
 using Solnet.Wallet;
-using System;
-using System.Collections.Generic;
-using System.Numerics;
 
-namespace Solnet.Programs.TokenLending.Models
+namespace TokenLending.Models
 {
     /// <summary>
     /// Represents the collateral of an obligation.

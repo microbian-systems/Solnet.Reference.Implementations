@@ -1,10 +1,8 @@
-﻿using Solnet.Wallet;
-using System;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 using Solnet.Programs.Utilities;
+using Solnet.Wallet;
 
-namespace Solnet.Programs.TokenLending.Models
+namespace TokenLending.Models
 {
     /// <summary>
     /// The state of a lending market.

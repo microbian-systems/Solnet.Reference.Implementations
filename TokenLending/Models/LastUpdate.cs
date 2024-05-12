@@ -1,7 +1,6 @@
-﻿using System;
-using Solnet.Programs.Utilities;
+﻿using Solnet.Programs.Utilities;
 
-namespace Solnet.Programs.TokenLending.Models
+namespace TokenLending.Models
 {
     /// <summary>
     /// The last update state.
