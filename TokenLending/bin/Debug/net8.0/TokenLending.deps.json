@@ -12,7 +12,8 @@
           "Solnet.KeyStore": "6.1.0",
           "Solnet.Programs": "6.1.0",
           "Solnet.Rpc": "6.1.0",
-          "Solnet.Wallet": "6.1.0"
+          "Solnet.Wallet": "6.1.0",
+          "ThrowGuard": "1.0.6"
         },
         "runtime": {
           "TokenLending.dll": {}
@@ -186,11 +187,20 @@
           "System.Text.Encodings.Web": "8.0.0"
         }
       },
+      "ThrowGuard/1.0.6": {
+        "runtime": {
+          "lib/net8.0/ThrowGuard.dll": {
+            "assemblyVersion": "1.0.6.0",
+            "fileVersion": "1.0.6.0"
+          }
+        }
+      },
       "Solnet.Extensions/6.1.0": {
         "dependencies": {
           "Solnet.Programs": "6.1.0",
           "Solnet.Rpc": "6.1.0",
-          "Solnet.Wallet": "6.1.0"
+          "Solnet.Wallet": "6.1.0",
+          "ThrowGuard": "1.0.6"
         },
         "runtime": {
           "Solnet.Extensions.dll": {}
@@ -200,7 +210,8 @@
         "dependencies": {
           "Chaos.NaCl.Standard": "1.0.0",
           "Portable.BouncyCastle": "1.9.0",
-          "Solnet.Wallet": "6.1.0"
+          "Solnet.Wallet": "6.1.0",
+          "ThrowGuard": "1.0.6"
         },
         "runtime": {
           "Solnet.KeyStore.dll": {}
@@ -208,7 +219,8 @@
       },
       "Solnet.Programs/6.1.0": {
         "dependencies": {
-          "Solnet.Rpc": "6.1.0"
+          "Solnet.Rpc": "6.1.0",
+          "ThrowGuard": "1.0.6"
         },
         "runtime": {
           "Solnet.Programs.dll": {}
@@ -218,7 +230,8 @@
         "dependencies": {
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Console": "8.0.0",
-          "Solnet.Wallet": "6.1.0"
+          "Solnet.Wallet": "6.1.0",
+          "ThrowGuard": "1.0.6"
         },
         "runtime": {
           "Solnet.Rpc.dll": {}
@@ -227,7 +240,8 @@
       "Solnet.Wallet/6.1.0": {
         "dependencies": {
           "Chaos.NaCl.Standard": "1.0.0",
-          "Portable.BouncyCastle": "1.9.0"
+          "Portable.BouncyCastle": "1.9.0",
+          "ThrowGuard": "1.0.6"
         },
         "runtime": {
           "Solnet.Wallet.dll": {}
@@ -352,6 +366,13 @@
       "sha512": "sha512-OdrZO2WjkiEG6ajEFRABTRCi/wuXQPxeV6g8xvUJqdxMvvuCCEk86zPla8UiIQJz3durtUEbNyY/3lIhS0yZvQ==",
       "path": "system.text.json/8.0.0",
       "hashPath": "system.text.json.8.0.0.nupkg.sha512"
+    },
+    "ThrowGuard/1.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HlTP2J3yDrar8CUCetZl9tJ9RFd79/Cj/20tIQAm/IfvtNVpvKDLdFy6cw72FiBz0uRZZe3w56AlJkZ5PSURWw==",
+      "path": "throwguard/1.0.6",
+      "hashPath": "throwguard.1.0.6.nupkg.sha512"
     },
     "Solnet.Extensions/6.1.0": {
       "type": "project",

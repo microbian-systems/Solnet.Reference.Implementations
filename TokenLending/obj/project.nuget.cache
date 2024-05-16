@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/acwE8NQa2p8cCJtZ3aMqttrc8cVOwvfXIwYMvRHlgnPPbs0nd8Fwq6r7u87cLuODE3agcjSw4TRCO/pG+qw8g==",
+  "dgSpecHash": "3PYS/zgal0v0zsXO6i15wuRKOORQ1RtpFzniSgPahcw3/19Bd3Q1kQUhnstWJA2IyWG8WQfXD8JOHzZZZRlZbg==",
   "success": true,
   "projectFilePath": "C:\\Users\\bbqch\\proj\\luna\\LunaSwap\\src\\SolanaSDK\\Solnet.Reference.Implementations\\TokenLending\\TokenLending.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\bbqch\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
     "C:\\Users\\bbqch\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\bbqch\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
+    "C:\\Users\\bbqch\\.nuget\\packages\\throwguard\\1.0.6\\throwguard.1.0.6.nupkg.sha512",
     "C:\\Users\\bbqch\\.nuget\\packages\\solnet.extensions\\6.1.0\\solnet.extensions.6.1.0.nupkg.sha512",
     "C:\\Users\\bbqch\\.nuget\\packages\\solnet.keystore\\6.1.0\\solnet.keystore.6.1.0.nupkg.sha512",
     "C:\\Users\\bbqch\\.nuget\\packages\\solnet.programs\\6.1.0\\solnet.programs.6.1.0.nupkg.sha512",

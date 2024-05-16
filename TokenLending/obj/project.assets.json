@@ -307,13 +307,27 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
+      "ThrowGuard/1.0.6": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/ThrowGuard.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/ThrowGuard.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Solnet.Extensions/6.1.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Solnet.Programs": "6.1.0",
           "Solnet.Rpc": "6.1.0",
-          "Solnet.Wallet": "6.1.0"
+          "Solnet.Wallet": "6.1.0",
+          "ThrowGuard": "1.0.6"
         },
         "compile": {
           "bin/placeholder/Solnet.Extensions.dll": {}
@@ -328,7 +342,8 @@
         "dependencies": {
           "Chaos.NaCl.Standard": "1.0.0",
           "Portable.BouncyCastle": "1.9.0",
-          "Solnet.Wallet": "6.1.0"
+          "Solnet.Wallet": "6.1.0",
+          "ThrowGuard": "1.0.6"
         },
         "compile": {
           "bin/placeholder/Solnet.KeyStore.dll": {}
@@ -341,7 +356,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Solnet.Rpc": "6.1.0"
+          "Solnet.Rpc": "6.1.0",
+          "ThrowGuard": "1.0.6"
         },
         "compile": {
           "bin/placeholder/Solnet.Programs.dll": {}
@@ -356,7 +372,8 @@
         "dependencies": {
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Console": "8.0.0",
-          "Solnet.Wallet": "6.1.0"
+          "Solnet.Wallet": "6.1.0",
+          "ThrowGuard": "1.0.6"
         },
         "compile": {
           "bin/placeholder/Solnet.Rpc.dll": {}
@@ -370,7 +387,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Chaos.NaCl.Standard": "1.0.0",
-          "Portable.BouncyCastle": "1.9.0"
+          "Portable.BouncyCastle": "1.9.0",
+          "ThrowGuard": "1.0.6"
         },
         "compile": {
           "bin/placeholder/Solnet.Wallet.dll": {}
@@ -953,6 +971,25 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "ThrowGuard/1.0.6": {
+      "sha512": "HlTP2J3yDrar8CUCetZl9tJ9RFd79/Cj/20tIQAm/IfvtNVpvKDLdFy6cw72FiBz0uRZZe3w56AlJkZ5PSURWw==",
+      "type": "package",
+      "path": "throwguard/1.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Logo.png",
+        "Readme.md",
+        "lib/net6.0/ThrowGuard.dll",
+        "lib/net6.0/ThrowGuard.xml",
+        "lib/net7.0/ThrowGuard.dll",
+        "lib/net7.0/ThrowGuard.xml",
+        "lib/net8.0/ThrowGuard.dll",
+        "lib/net8.0/ThrowGuard.xml",
+        "throwguard.1.0.6.nupkg.sha512",
+        "throwguard.nuspec"
+      ]
+    },
     "Solnet.Extensions/6.1.0": {
       "type": "project",
       "path": "../../Solnet/src/Solnet.Extensions/Solnet.Extensions.csproj",
@@ -985,7 +1022,8 @@
       "Solnet.KeyStore >= 6.1.0",
       "Solnet.Programs >= 6.1.0",
       "Solnet.Rpc >= 6.1.0",
-      "Solnet.Wallet >= 6.1.0"
+      "Solnet.Wallet >= 6.1.0",
+      "ThrowGuard >= 1.0.6"
     ]
   },
   "packageFolders": {
@@ -1051,6 +1089,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "ThrowGuard": {
+            "target": "Package",
+            "version": "[1.0.6, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
