@@ -1034,11 +1034,11 @@
   "project": {
     "version": "1.0.0-alpha",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bbqch\\proj\\luna\\LunaSwap\\src\\SolanaSDK\\Solnet.Reference.Implementations\\TokenLending\\TokenLending.csproj",
+      "projectUniqueName": "C:\\Users\\bbqch\\proj\\luna\\lunaswap\\src\\SolanaSDK\\Solnet.Reference.Implementations\\TokenLending\\TokenLending.csproj",
       "projectName": "TokenLending",
-      "projectPath": "C:\\Users\\bbqch\\proj\\luna\\LunaSwap\\src\\SolanaSDK\\Solnet.Reference.Implementations\\TokenLending\\TokenLending.csproj",
+      "projectPath": "C:\\Users\\bbqch\\proj\\luna\\lunaswap\\src\\SolanaSDK\\Solnet.Reference.Implementations\\TokenLending\\TokenLending.csproj",
       "packagesPath": "C:\\Users\\bbqch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bbqch\\proj\\luna\\LunaSwap\\src\\SolanaSDK\\Solnet.Reference.Implementations\\TokenLending\\obj\\",
+      "outputPath": "C:\\Users\\bbqch\\proj\\luna\\lunaswap\\src\\SolanaSDK\\Solnet.Reference.Implementations\\TokenLending\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Users\\bbqch\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
@@ -1062,20 +1062,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\bbqch\\proj\\luna\\LunaSwap\\src\\SolanaSDK\\Solnet\\src\\Solnet.Extensions\\Solnet.Extensions.csproj": {
-              "projectPath": "C:\\Users\\bbqch\\proj\\luna\\LunaSwap\\src\\SolanaSDK\\Solnet\\src\\Solnet.Extensions\\Solnet.Extensions.csproj"
+            "C:\\Users\\bbqch\\proj\\luna\\lunaswap\\src\\SolanaSDK\\Solnet\\src\\Solnet.Extensions\\Solnet.Extensions.csproj": {
+              "projectPath": "C:\\Users\\bbqch\\proj\\luna\\lunaswap\\src\\SolanaSDK\\Solnet\\src\\Solnet.Extensions\\Solnet.Extensions.csproj"
             },
-            "C:\\Users\\bbqch\\proj\\luna\\LunaSwap\\src\\SolanaSDK\\Solnet\\src\\Solnet.KeyStore\\Solnet.KeyStore.csproj": {
-              "projectPath": "C:\\Users\\bbqch\\proj\\luna\\LunaSwap\\src\\SolanaSDK\\Solnet\\src\\Solnet.KeyStore\\Solnet.KeyStore.csproj"
+            "C:\\Users\\bbqch\\proj\\luna\\lunaswap\\src\\SolanaSDK\\Solnet\\src\\Solnet.KeyStore\\Solnet.KeyStore.csproj": {
+              "projectPath": "C:\\Users\\bbqch\\proj\\luna\\lunaswap\\src\\SolanaSDK\\Solnet\\src\\Solnet.KeyStore\\Solnet.KeyStore.csproj"
             },
-            "C:\\Users\\bbqch\\proj\\luna\\LunaSwap\\src\\SolanaSDK\\Solnet\\src\\Solnet.Programs\\Solnet.Programs.csproj": {
-              "projectPath": "C:\\Users\\bbqch\\proj\\luna\\LunaSwap\\src\\SolanaSDK\\Solnet\\src\\Solnet.Programs\\Solnet.Programs.csproj"
+            "C:\\Users\\bbqch\\proj\\luna\\lunaswap\\src\\SolanaSDK\\Solnet\\src\\Solnet.Programs\\Solnet.Programs.csproj": {
+              "projectPath": "C:\\Users\\bbqch\\proj\\luna\\lunaswap\\src\\SolanaSDK\\Solnet\\src\\Solnet.Programs\\Solnet.Programs.csproj"
             },
-            "C:\\Users\\bbqch\\proj\\luna\\LunaSwap\\src\\SolanaSDK\\Solnet\\src\\Solnet.Rpc\\Solnet.Rpc.csproj": {
-              "projectPath": "C:\\Users\\bbqch\\proj\\luna\\LunaSwap\\src\\SolanaSDK\\Solnet\\src\\Solnet.Rpc\\Solnet.Rpc.csproj"
+            "C:\\Users\\bbqch\\proj\\luna\\lunaswap\\src\\SolanaSDK\\Solnet\\src\\Solnet.Rpc\\Solnet.Rpc.csproj": {
+              "projectPath": "C:\\Users\\bbqch\\proj\\luna\\lunaswap\\src\\SolanaSDK\\Solnet\\src\\Solnet.Rpc\\Solnet.Rpc.csproj"
             },
-            "C:\\Users\\bbqch\\proj\\luna\\LunaSwap\\src\\SolanaSDK\\Solnet\\src\\Solnet.Wallet\\Solnet.Wallet.csproj": {
-              "projectPath": "C:\\Users\\bbqch\\proj\\luna\\LunaSwap\\src\\SolanaSDK\\Solnet\\src\\Solnet.Wallet\\Solnet.Wallet.csproj"
+            "C:\\Users\\bbqch\\proj\\luna\\lunaswap\\src\\SolanaSDK\\Solnet\\src\\Solnet.Wallet\\Solnet.Wallet.csproj": {
+              "projectPath": "C:\\Users\\bbqch\\proj\\luna\\lunaswap\\src\\SolanaSDK\\Solnet\\src\\Solnet.Wallet\\Solnet.Wallet.csproj"
             }
           }
         }
@@ -1084,6 +1084,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
