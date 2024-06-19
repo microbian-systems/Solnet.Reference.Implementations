@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright (c) 2023 Microbian Systems")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0-alpha+7eb410b19ae7769fc8ada5a67d4713c377de6165")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0-alpha+ffac392fe6fce5899446dfd6b896db075f7731f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("TokenLending")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TokenLending")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
