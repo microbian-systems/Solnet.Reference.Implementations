@@ -1,4 +1,6 @@
-﻿namespace TokenLending
+﻿using System.Collections.Generic;
+
+namespace TokenLending
 {
     /// <summary>
     /// Represents the instruction types for the <see cref="TokenLendingProgram"/> along with a friendly name so as not to use reflection.

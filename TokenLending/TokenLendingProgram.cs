@@ -1,4 +1,6 @@
-﻿using Solnet.Programs;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Solnet.Programs;
 using Solnet.Programs.Abstract;
 using Solnet.Rpc;
 using Solnet.Rpc.Models;

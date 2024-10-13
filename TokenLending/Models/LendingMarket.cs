@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System;
+using System.Linq;
+using System.Text;
 using Solnet.Programs.Utilities;
 using Solnet.Wallet;
 

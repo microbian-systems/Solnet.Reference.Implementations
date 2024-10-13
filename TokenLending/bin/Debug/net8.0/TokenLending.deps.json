@@ -203,7 +203,10 @@
           "ThrowGuard": "1.0.6"
         },
         "runtime": {
-          "Solnet.Extensions.dll": {}
+          "Solnet.Extensions.dll": {
+            "assemblyVersion": "6.1.0",
+            "fileVersion": "6.1.0.0"
+          }
         }
       },
       "Solnet.KeyStore/6.1.0": {
@@ -214,7 +217,10 @@
           "ThrowGuard": "1.0.6"
         },
         "runtime": {
-          "Solnet.KeyStore.dll": {}
+          "Solnet.KeyStore.dll": {
+            "assemblyVersion": "6.1.0",
+            "fileVersion": "6.1.0.0"
+          }
         }
       },
       "Solnet.Programs/6.1.0": {
@@ -223,7 +229,10 @@
           "ThrowGuard": "1.0.6"
         },
         "runtime": {
-          "Solnet.Programs.dll": {}
+          "Solnet.Programs.dll": {
+            "assemblyVersion": "6.1.0",
+            "fileVersion": "6.1.0.0"
+          }
         }
       },
       "Solnet.Rpc/6.1.0": {
@@ -234,7 +243,10 @@
           "ThrowGuard": "1.0.6"
         },
         "runtime": {
-          "Solnet.Rpc.dll": {}
+          "Solnet.Rpc.dll": {
+            "assemblyVersion": "6.1.0",
+            "fileVersion": "6.1.0.0"
+          }
         }
       },
       "Solnet.Wallet/6.1.0": {
@@ -244,7 +256,10 @@
           "ThrowGuard": "1.0.6"
         },
         "runtime": {
-          "Solnet.Wallet.dll": {}
+          "Solnet.Wallet.dll": {
+            "assemblyVersion": "6.1.0",
+            "fileVersion": "6.1.0.0"
+          }
         }
       }
     }
